@@ -22,6 +22,7 @@ $default_settings = array(
 	'mysql_base' => 'test',
 	'mysql_persist' => FALSE,
 );
+$default_settings['lang'] = "en";
 
 // Настройки
 include_once dirname(__FILE__) . '/config.php';
@@ -30,6 +31,7 @@ include_once dirname(__FILE__) . '/config.php';
 foreach ($default_settings as $key => $value) {
 	if (!isset($settings[$key])) $settings[$key] = $value;
 }
+
 
 // Базовые функции
 include_once dirname(__FILE__) . '/libs/clCommon.php';
@@ -62,11 +64,13 @@ $Path = new clPath(
 //------------------------------------------------------------------------------
 // Библиотека для работы с языками
 include_once dirname(__FILE__) . '/libs/clLang.php';
+//Меняем язык через кнопку
+$settings['lang'] = (isset($_COOKIE["language"] ) && $_COOKIE["language"] == $_COOKIE["language"]) ?  $_COOKIE["language"] : $settings['lang'];
+
 
 // Создаём объект для работы с языками
-$Lang = new clLang(
-		$settings['lang']
-	);
+
+$Lang = new clLang($settings['lang']);
 //------------------------------------------------------------------------------
 
 

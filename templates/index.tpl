@@ -5,6 +5,8 @@ $template_description = "{$settings['site_name']} - Best goods from universe! Fr
 $template_keywords = "china goods, best goods, phones, food, tablets, shirts";
 
 include_once $Common->GetTemplatePath('_up');
+
+
 ?>
 <div class="col-md-12" >
 	<div class="panel panel-default">

@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="ru">
 <head lang="en">
@@ -80,7 +79,7 @@
                     <div class="pic"><img src="/img/rectangle_1.png" alt="При производстве мебели по индивидуальным эскиза" /></div>					<div class="text lp6_content_text"><p>- "Во главу угла" мы ставим индивидуальный подход. Каждый предмет мебели мы изготавливаем по оригинальному эскизу или, если же эскиза нет, наши специалисты всегда готовы обсудить с заказчиком все его пожелания и идеи, а затем воплотить это все в реальность.<br /> - Оперативность - вся мебель изготавливается в кратчайшие сроки, а при необходимости возможна реализация сверхсрочных заказов.<br /> - Возможность внесения корректировок в дизайн мебели на этапах до полного утверждения эскиза - еще один плюс сотрудничества с нами.</p></div>				</div>
             </div>
             <div class="text_j left">
-                <div class="title lp6_subtitle_text">Мы гарантируем, что заказанная у нас мебель, украс</div>
+                <div class="title lp6_subtitle_text">Мы гарантируем, что заказанная у нас мебель</div>
                 <div class="text_wrap clear-self">
                     <div class="pic"><img src="/img/rectangle_2.png" alt="Мы гарантируем, что заказанная у нас мебель, украс" /></div>					<div class="text lp6_content_text"><p>Мы поможем реализовать Вам самые смелые задумки, при необходимости вместе спроектируем и составим эскиз, а также подберем материалы.</p>
                         <p>Наша компания вот уже более 5 лет работает на рынке кухонной мебели. Мы работаем по индивидуальным эскизам, а также предоставляем своим клиентам типовую качественную, прочную и удобную мебель по выгодным ценам.<br /> <br /> Ждем Вас!</p></div>				</div>
@@ -121,7 +120,7 @@
             </div>
         </div>
         <div class="mapp">
-            <iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3A4ca108d4fd9196f690ba66858397ba447aba0a051bfd7971233e6575e1840bf4&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+            <iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3Ae09d8a073fb8e3eb99fe2e89d4316445176880cc221b61da1ce6616e312e4994&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
         </div>
     </div>
 </div><div class="footer--theme5" id="_lp_block_14401041" data-block-layout="29041">
