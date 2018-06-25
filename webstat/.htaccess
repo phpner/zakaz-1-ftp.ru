@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/vadshop.ru/webstat"
+AuthUserFile /var/www/user78973/data/etc/94373016.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>
