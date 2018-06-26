@@ -32,4 +32,5 @@ $lang = array(
 	'price higher' => 'price higher',
 	'popular' => 'popular',
 	'All' => 'All',
+	"Title mebel" => 'Furniture',
 );

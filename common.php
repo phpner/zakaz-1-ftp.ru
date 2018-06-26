@@ -64,9 +64,9 @@ $Path = new clPath(
 //------------------------------------------------------------------------------
 // Библиотека для работы с языками
 include_once dirname(__FILE__) . '/libs/clLang.php';
-//Меняем язык через кнопку
-$settings['lang'] = (isset($_COOKIE["language"] ) && $_COOKIE["language"] == $_COOKIE["language"]) ?  $_COOKIE["language"] : $settings['lang'];
 
+//Меняем язык через кнопку, скрипт не мой))
+$settings['lang'] = (isset($_COOKIE["language"])) ?  $_COOKIE["language"] : $settings['lang'];
 
 // Создаём объект для работы с языками
 

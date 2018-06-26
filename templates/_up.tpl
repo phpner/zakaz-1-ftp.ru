@@ -30,8 +30,32 @@
 	<script src="/js/html5shiv.min.js"></script>
 	<script src="/js/respond.min.js"></script>
 <![endif]-->
-<script src="/js/jquery-1.11.1.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+<script   src="/js/jquery-1.11.1.min.js"></script>
+<script  src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.nice-select.js"></script>
+<script>
+
+    $(document).ready(function(){
+
+        console.log($.cookie('language'));
+
+		(!$.cookie('language')) ?  $.cookie('language', "ru", { expires: 7, path: '/' }) : "";
+
+		( $.cookie('language') === "ru") ? $("#myonoffswitch").prop('checked', true)  : $("#myonoffswitch").prop('checked', false);
+
+    $("#myonoffswitch").on('change',function(){
+			if($("#myonoffswitch").prop('checked')){
+                $.cookie('language', 'ru', { expires: 7, path: '/'});
+				location.reload();
+			}else{
+                $.cookie('language', "en", { expires: 7, path: '/' });
+                location.reload();
+			}
+    });
+    });
+	
+</script>
 </head>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -65,6 +89,15 @@
 <nav class="navbar navbar-default new-navbar" role="navigation">
 	<div class="container">
 		<ul class="nav navbar-nav">
+			<li>
+				<div class="onoffswitch">
+					<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked="checked">
+					<label class="onoffswitch-label" for="myonoffswitch">
+						<span class="onoffswitch-inner"></span>
+						<span class="onoffswitch-switch"></span>
+					</label>
+				</div>
+			</li>
 			<li><a href="/"><?php print $Lang->GetString('Main page'); ?></a></li>
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php print $Lang->GetString('Categories'); ?><span class="caret"></span></a>

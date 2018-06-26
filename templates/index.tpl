@@ -6,11 +6,12 @@ $template_keywords = "china goods, best goods, phones, food, tablets, shirts";
 
 include_once $Common->GetTemplatePath('_up');
 
+$lan = ($_COOKIE['language'] == "ru") ? "Мебель" : "Furniture";
 
 ?>
 <div class="col-md-12" >
 	<div class="panel panel-default">
-		<div style="text-align: center" class="panel-heading">Мебель</div>
+		<div style="text-align: center" class="panel-heading"><?php print $Lang->GetString('Title mebel'); ?></div>
 		<div class="panel-body text-center">
 			<a class="main-top" href="/mebel/"><img src="../img/head.png" alt=""></a>
 			<p class="top-mg"><a href="/mebel/"><img class="good-img" src="../img/layer_473.png"></a></p>
@@ -19,10 +20,10 @@ include_once $Common->GetTemplatePath('_up');
 			<div class="btn-toolbar" role="toolbar">
 				<div class="top_mebel">
 					<div class="btn-group">
-						<a class="btn btn-b" href="/mebel/" rel="nofollow">Купить</a>
+						<a class="btn btn-b" href="/mebel/" rel="nofollow"><?php print $Lang->GetString('Buy now!'); ?></a>
 					</div>
 					<div class="wr-btn-more-info">
-						<a class="btn btn-more-info" href="/mebel/">Подробнее</a>
+						<a class="btn btn-more-info" href="/mebel/"><?php print $Lang->GetString('More info'); ?></a>
 					</div>
 				</div>
 			</div>

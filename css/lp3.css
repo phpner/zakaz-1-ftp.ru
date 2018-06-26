@@ -4150,7 +4150,7 @@ table.table2 th {
 	color: #666;
 }
 
-.form-middle--theme5 .frm-input input[type="text"]:moz-placeholder, .form-middle--theme5 .frm-input textarea:moz-placeholder, .form-middle--theme5 .frm-input select:moz-placeholder {
+.form-middle--theme5 .frm-input input[type="text"]:-moz-placeholder, .form-middle--theme5 .frm-input textarea:moz-placeholder, .form-middle--theme5 .frm-input select:moz-placeholder {
 	color: #666;
 }
 
@@ -5354,7 +5354,7 @@ table.table2 th {
 	color: #666;
 }
 
-.sale-block-two--theme5 .form-part .tpl-anketa .form_field input[type="text"]:moz-placeholder, .sale-block-two--theme5 .form-part .tpl-anketa .form_field textarea:moz-placeholder, .sale-block-two--theme5 .form-part .tpl-anketa .form_field select:moz-placeholder {
+.sale-block-two--theme5 .form-part .tpl-anketa .form_field input[type="text"]:-moz-placeholder, .sale-block-two--theme5 .form-part .tpl-anketa .form_field textarea:moz-placeholder, .sale-block-two--theme5 .form-part .tpl-anketa .form_field select:moz-placeholder {
 	color: #666;
 }
 
@@ -23019,3 +23019,4 @@ padding: 40px 15px;
 .one-screen.inverse .advatages-part__text, .one-screen.inverse .company-name__text, .one-screen.inverse .contacts-part__address .address, .one-screen.inverse .contacts-part__phones .phones, .one-screen.inverse .text-part__title, .one-screen.inverse .text-part__text, .one-screen.inverse .advatages-part__title {
 	color: #333;
 }
+
