@@ -32,5 +32,5 @@ $lang = array(
 	'price higher' => 'сначала дорогие',
 	'popular' => 'популярные',
 	'All' => 'Всё',
-	"Title mebel" => 'Мебель',
+	"Title mebel" => 'МЕБЕЛЬ от производителя',
 );

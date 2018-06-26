@@ -79,6 +79,7 @@ h1 {
 img {
 	max-width: 100%;
 	height: auto;
+	width: 100%;
 }
 
 a[href^="tel:"] {
@@ -2145,7 +2146,9 @@ table.table2 th {
 .text--theme5 {
 	position: relative;
 }
-
+.left-part{
+	position: relative;
+}
 .text--theme5.no-inverse .left-part .block-title, .text--theme5.no-inverse .right-part .block-title {
 	color: #fff;
 }
@@ -7359,6 +7362,7 @@ table.table2 th {
 .header-two--theme9 .left-part .logo {
 	margin-right: 20px;
 	font-size: 0;
+	position: relative;
 }
 
 @media all and (max-width: 980px) {
@@ -7803,17 +7807,24 @@ table.table2 th {
 .header-six--theme9 .left-part .logo {
 	margin-right: 20px;
 	font-size: 0;
+	float: left;
+	top: 0;
+	width: 66px;
+
 }
 
 @media all and (max-width: 980px) {
 	.header-six--theme9 .left-part .logo {
 		margin-right: 15px;
+
 	}
 }
 
 @media all and (max-width: 580px) {
 	.header-six--theme9 .left-part .logo {
 		margin-right: 11px;
+		float: none;
+		display: inline-block;
 	}
 }
 
@@ -8297,6 +8308,8 @@ table.table2 th {
 	padding: 30px 0 30px;
 	max-width: 970px;
 	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
 }
 
 .products-with-pic--theme9 .block-title {
@@ -8305,6 +8318,7 @@ table.table2 th {
 	text-align: center;
 	color: #000;
 	margin-bottom: 35px;
+	flex-basis: 100%;
 }
 
 .products-with-pic--theme9 .text-before {
@@ -8353,6 +8367,7 @@ table.table2 th {
 	text-align: center;
 	border: 1px solid rgba(0, 0, 0, .1);
 	border-top: none;
+	height: 172px;
 }
 
 .products-with-pic--theme9 .product .bottom-part .title {
@@ -10819,6 +10834,9 @@ table.table2 th {
 }
 
 @media screen and (max-width: 640px) {
+	.left-part{
+		text-align: center;
+	}
 	.sale-block1 .sale-block-inner {
 		padding: 30px 0;
 	}

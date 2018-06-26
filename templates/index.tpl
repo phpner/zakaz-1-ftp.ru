@@ -6,17 +6,16 @@ $template_keywords = "china goods, best goods, phones, food, tablets, shirts";
 
 include_once $Common->GetTemplatePath('_up');
 
-$lan = ($_COOKIE['language'] == "ru") ? "Мебель" : "Furniture";
 
 ?>
 <div class="col-md-12" >
 	<div class="panel panel-default">
-		<div style="text-align: center" class="panel-heading"><?php print $Lang->GetString('Title mebel'); ?></div>
+		<div style="text-align: center; font-size: 3rem;" class="panel-heading"><?php print $Lang->GetString('Title mebel'); ?></div>
 		<div class="panel-body text-center">
-			<a class="main-top" href="/mebel/"><img src="../img/head.png" alt=""></a>
-			<p class="top-mg"><a href="/mebel/"><img class="good-img" src="../img/layer_473.png"></a></p>
-			<p class="top-mg"><a href="/mebel/"><img class="good-img" src="../img/layer_474.png"></a></p>
-			<p class="top-mg"><a href="/mebel/"><img class="good-img" src="../img/layer_476.png"></a></p>
+			<a class="main-top" href="/mebel/"><img src="../img/main-top.jpg" alt=""></a>
+			<p class="top-mg"><a href="/mebel/"><img class="good-img" src="../img/top-3.jpg"></a></p>
+			<p class="top-mg"><a href="/mebel/"><img class="good-img" src="../img/top-2.jpg"></a></p>
+			<p class="top-mg"><a href="/mebel/"><img class="good-img" src="../img/top-1.jpg"></a></p>
 			<div class="btn-toolbar" role="toolbar">
 				<div class="top_mebel">
 					<div class="btn-group">
@@ -30,7 +29,7 @@ $lan = ($_COOKIE['language'] == "ru") ? "Мебель" : "Furniture";
 		</div>
 	</div>
 </div>
-	<h1 class="text-center ubder-main-img">Best price</h1>
+	<h1 style="margin-bottom: 20px; font-size: 2.5rem; margin-left: 13px;" class="text-left ubder-main-img">Смотрите также:</h1>
 <?php
 	foreach ($offers as $offer_info){
 ?>

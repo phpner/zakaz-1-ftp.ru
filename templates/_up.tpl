@@ -36,6 +36,8 @@
 <script src="/js/jquery.nice-select.js"></script>
 <script>
 
+	//работа с куками через js
+
     $(document).ready(function(){
 
         console.log($.cookie('language'));

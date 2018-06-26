@@ -10,10 +10,10 @@
 	emailTo($message,"Форма заказа : через кнопку 'ЗАКАЗ'  ");
 
 function emailTo($message, $subject){
-	$to  = "phpner@gmail.com";
+	$to  = "info@vadshop.ru";
 
 	$headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-	$headers .= "From: Отправитель from@example.com\r\n"; //Наименование и почта
+	$headers .= "From: Отправитель vadshop.ru\r\n"; //Наименование и почта
 	$headers .= "Reply-To: reply-to: form@example.com\r\n";
 
 	mail($to, $subject, $message, $headers);
