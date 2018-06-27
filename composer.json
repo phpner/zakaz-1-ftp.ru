@@ -1,0 +1,12 @@
+{
+    "name": "phpner/i-geniy.ru",
+    "authors": [
+        {
+            "name": "phpner",
+            "email": "phpner@gmil.com"
+        }
+    ],
+    "require": {
+        "electrolinux/phpquery": "^0.9.6"
+    }
+}

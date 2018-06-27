@@ -1,6 +1,8 @@
 <?php
 // Настройки
 $settings = array(
+	//Процент для мебель цена
+	"proc_mebel_price" => 5,
 	// Ключ для доступа к API
 	'user_api_key' => '8fa5527a2c9c66953eaae01c8f2a81be',
 	// Хэш для построения диплинков

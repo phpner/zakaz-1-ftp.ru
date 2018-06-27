@@ -24,10 +24,12 @@
 </div>
 
 <div class="mfp-hide white-popup-block" id="test-modal">
-    <form action="/app/call.php" class="form-header" id="form-1" name="form-1">
+    <form action="/app/call.php" method="post" class="form-mod" id="form-1" name="form-1">
         <h2>заказать звонок</h2>
-        <input id="name" name="name" placeholder="Ваше имя" type="text"> <input id="emal-1" name="email" placeholder="Ваша почта" type="text"> <input id="phone-1" name="phone" placeholder=
-        "Ваш номер телефона" type="text"> <input type="submit"></form>
+        <input id="name" name="name" placeholder="Ваше имя" type="text"> <input id="emal-1" name="email" placeholder="Ваша почта" type="text"> <input class="phone-1" name="phone" placeholder=
+        "Ваш номер телефона" type="text">
+        <input type="submit">
+    </form>
 
     <p><a class="popup-modal-dismiss" href="#">X</a>
     </p>
@@ -49,15 +51,18 @@
                     <div class="work-time">Ежедневно: с 09-00 до 20-00</div>
 
                     <div class="phones">
-                        <div><a class="csspatch-ignore" href="tel:+7-918-270-00-20">+7-918-270-00-20</a>
+                        <div>
+                            <a class="csspatch-ignore" href="tel:+7-918-270-00-20">+7-918-270-00-20</a>
                         </div>
                         <br>
 
-                        <div><a class="csspatch-ignore" href="tel:+7-918-879-99-55">+7-918-879-99-55</a>
+                        <div>
+                            <a class="csspatch-ignore" href="tel:+7-918-879-99-55">+7-918-879-99-55</a>
                         </div>
                         <br>
 
-                        <div><a class="csspatch-ignore" href="tel:+7-918-879-99-55">info@vadshop.ru</a>
+                        <div>
+                            <a class="csspatch-ignore" href="tel:+7-918-879-99-55">info@vadshop.ru</a>
                         </div>
                     </div>
                 </div>
@@ -68,7 +73,6 @@
         </div>
     </div>
 </div>
-
 <div class="big-pic--theme9" data-block-layout="110241" id="_lp_block_14394441">
     <div class="big-pic-wrapper center-center" style="background-image: url('/img/head.png');">
         <div class="big-pic-inner">
@@ -86,53 +90,58 @@
         <div class="products-inner">
             <div class="block-title lp6_title_text">Наша мебель</div>
 
-            <div class="product">
-                <div class="product-inner">
-                    <div class="pic"><img alt="" src="/img/layer_473.png">
-                    </div>
+                    <?php
+                    $i = 0;
+                        foreach($all as $item):
+                    ?>
+                        <div class="product">
+                            <div class="product-inner">
+                                <a class="pic" href='http://www.mebel-esloboda.ru<?php echo $item["img"]?>'>
+                                    <img alt='<?php echo $item["title"] ?>' src='http://www.mebel-esloboda.ru<?php echo $item["img"]?>'>
+                                </a>
 
-                    <div class="bottom-part">
-                        <div class="title lp6_subtitle_text">"Леон" особый плюс - это полноценное, максимально просторное спальное место.</div>
-
-                        <div class="text lp6_content_text">
+                                <div class="bottom-part">
+                                    <div class="title lp6_subtitle_text"><?php echo $item["title"] ?></div>
+                                    <div class="price">
+                                        <?php echo $item["price"]?> руб.
+                                    </div>
+                                    <a href="#zakaz-<?php print $i?>" class="buy-cart">
+                                       заказать
+                                    </a>
+                                    <form action="/app/call.php" method="post" class="mfp-hide white-popup-block form-mod" id="zakaz-<?php print $i?>">
+                                        <h2>заказать:</h2>
+                                        <h3>"<?php echo $item["title"] ?>"</h3>
+                                        <input id="name" name="name" placeholder="Ваше имя" type="text">
+                                        <input id="emal-1" name="email" placeholder="Ваша почта" type="text">
+                                        <input class="phone-1" name="phone" placeholder="Ваш номер телефона" type="text">
+                                        <input type="hidden" name="name-prod" value='<?php echo $item["title"] ?>'>
+                                        <input type="hidden" name="price" value='<?php echo $item["price"] ?>'>
+                                        <input type="hidden" name="old-price" value='<?php echo $item["old-price"] ?>'>
+                                        <input type="hidden" name="from-zakaz">
+                                        <input type="hidden" name="procent" value='<?php print $item["procent"] ?>'>
+                                        <input type="hidden" name="income" value='<?php print $item["income"] ?>'>
+                                        <p>
+                                            <a class="popup-modal-dismiss" href="#">X</a>
+                                        </p>
+                                        <input type="submit">
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="price">
-                        </div>
-                    </div>
+                    <?php
+                    $i++;
+                    endforeach;
+                     ?>
                 </div>
-            </div>
+            <script type="text/template" id="template-demo">
+                <ul>
+                    <% for (var i = 0, len = data.length; i < len; i++) { %>
+                    <li><%= data[i] %></li>
+                    <% } %>
+                </ul>
+            </script>
+            <div id="data-container"></div>
 
-            <div class="product">
-                <div class="product-inner">
-                    <div class="pic"><img alt="" src="/img/meb-2.jpg">
-                    </div>
-
-                    <div class="bottom-part">
-                        <div class="title lp6_subtitle_text">Сочетание обивки из ткани и кожи придают модели индивидуальность.</div>
-
-                        <div class="text lp6_content_text">
-                        </div>
-                        <!-- <div class="price">127 000 руб.</div> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <div class="product-inner">
-                    <div class="pic"><img alt="" src="/img/meb-3.jpg">
-                    </div>
-
-                    <div class="bottom-part">
-                        <div class="title lp6_subtitle_text">Декоративные подушки на подлокотниках обеспечивают дополнительный комфорт. Механизм "Дельфин"</div>
-
-                        <div class="text lp6_content_text">
-                        </div>
-                        <!-- <div class="price">47 000 руб.</div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -234,10 +243,23 @@
 </script>
 <script src="/js/jquery.maskedinput.js">
 </script>
-<script src="/js/jquery.magnific-popup.min.js">
-</script>
+<script src="/js/jquery.magnific-popup.min.js"></script>
+
+<script src="/js/pagination.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
 <script>
     $(function () {
+
+        $('.pic').magnificPopup({
+            type: 'image',
+            closeOnContentClick: true,
+            mainClass: 'mfp-img-mobile',
+            image: {
+                verticalFit: true
+            }
+
+        });
+
         var h = window.location.hash.replace(/\#/g, '');
         if (h == 'thanks'){
             $(".overlay_in").fadeIn(200);
@@ -246,30 +268,35 @@
                 $(".overlay_in").fadeOut(200);
             },5000);
         }
-        $("#phone-1").mask("+7(999) 999-9999");
-        $('#form-1').validate({
-            rules : {
-                name:{required: true},
-                email: {
-                    required: true,
-                    email: true
+        $(".phone-1").mask("+7(999) 999-9999");
+
+        $('form').each(function() {  // attach to all form elements on page
+            $(this).validate({
+                rules : {
+                    name:{required: true},
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    phone:{
+                        required: true
+                    }
                 },
-                phone:{
-                    required: true
+                messages : {
+                    name : "Имя обязательно!",
+                    email : "Email обязательно!",
+                    phone: "Телефон обязательно!",
+                },
+                errorClass: "error_message",
+                errorElement : "div",
+                highlight: function (element, errorClass, validClass) {
+                    return false;  // ensure this function stops
                 }
-            },
-            messages : {
-                name : "Имя обязательно!",
-                email : "Email обязательно!",
-                phone: "Телефон обязательно!",
-            },
-            errorClass: "error_message",
-            errorElement : "div",
-            highlight: function (element, errorClass, validClass) {
-                return false;  // ensure this function stops
-            }
+            });
         });
-        $('.popup-modal').magnificPopup({
+
+
+        $('.popup-modal,.buy-cart').magnificPopup({
             type: 'inline',
             preloader: false,
             focus: '#username',

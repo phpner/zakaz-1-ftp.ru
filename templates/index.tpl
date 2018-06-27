@@ -29,7 +29,7 @@ include_once $Common->GetTemplatePath('_up');
 		</div>
 	</div>
 </div>
-	<h1 style="margin-bottom: 20px; font-size: 2.5rem; margin-left: 13px;" class="text-left ubder-main-img">Смотрите также:</h1>
+<h1 style="margin-bottom: 20px; font-size: 2.5rem; margin-left: 13px;   color: #000;" class="text-left ubder-main-img"><?php print $Lang->GetString('See also:');?></h1>
 <?php
 	foreach ($offers as $offer_info){
 ?>
