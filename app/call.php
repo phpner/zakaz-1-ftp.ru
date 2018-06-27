@@ -31,7 +31,7 @@ $time = date("F j, Y, g:i a");
 					      <b>Цена на нашем сайте 'VadShop'</b>: $new_price руб.
 					    </p>					  
 					    <p>
-					      <b>Цена на найте  mebel-esloboda.ru</b>: $old_price руб.
+					      <b>Цена на cайте  mebel-esloboda.ru</b>: $old_price руб.
 					    </p>
 					     <p>
 					      <b>Доход от $procent%</b>: $income руб.

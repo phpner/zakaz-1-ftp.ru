@@ -66,9 +66,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="button"><a class="popup-modal" href="#test-modal">Обратная связь!</a>
-                </div>
+                <div class="button"><a class="popup-modal" href="#test-modal">Обратная связь!</a> </div>
             </div>
         </div>
     </div>
@@ -89,59 +87,56 @@
     <div class="products-wrapper">
         <div class="products-inner">
             <div class="block-title lp6_title_text">Наша мебель</div>
+            <div class="product">
+                <div class="product-inner">
+                    <div class="pic">
+                        <img alt="" src="/img/layer_473.png">
+                    </div>
 
-                    <?php
-                    $i = 0;
-                        foreach($all as $item):
-                    ?>
-                        <div class="product">
-                            <div class="product-inner">
-                                <a class="pic" href='http://www.mebel-esloboda.ru<?php echo $item["img"]?>'>
-                                    <img alt='<?php echo $item["title"] ?>' src='http://www.mebel-esloboda.ru<?php echo $item["img"]?>'>
-                                </a>
+                    <div class="bottom-part">
+                        <div class="title lp6_subtitle_text">"Леон" особый плюс - это полноценное, максимально просторное спальное место.</div>
 
-                                <div class="bottom-part">
-                                    <div class="title lp6_subtitle_text"><?php echo $item["title"] ?></div>
-                                    <div class="price">
-                                        <?php echo $item["price"]?> руб.
-                                    </div>
-                                    <a href="#zakaz-<?php print $i?>" class="buy-cart">
-                                       заказать
-                                    </a>
-                                    <form action="/app/call.php" method="post" class="mfp-hide white-popup-block form-mod" id="zakaz-<?php print $i?>">
-                                        <h2>заказать:</h2>
-                                        <h3>"<?php echo $item["title"] ?>"</h3>
-                                        <input id="name" name="name" placeholder="Ваше имя" type="text">
-                                        <input id="emal-1" name="email" placeholder="Ваша почта" type="text">
-                                        <input class="phone-1" name="phone" placeholder="Ваш номер телефона" type="text">
-                                        <input type="hidden" name="name-prod" value='<?php echo $item["title"] ?>'>
-                                        <input type="hidden" name="price" value='<?php echo $item["price"] ?>'>
-                                        <input type="hidden" name="old-price" value='<?php echo $item["old-price"] ?>'>
-                                        <input type="hidden" name="from-zakaz">
-                                        <input type="hidden" name="procent" value='<?php print $item["procent"] ?>'>
-                                        <input type="hidden" name="income" value='<?php print $item["income"] ?>'>
-                                        <p>
-                                            <a class="popup-modal-dismiss" href="#">X</a>
-                                        </p>
-                                        <input type="submit">
-                                    </form>
-                                </div>
-                            </div>
+                        <div class="text lp6_content_text">
                         </div>
-                    <?php
-                    $i++;
-                    endforeach;
-                     ?>
-                </div>
-            <script type="text/template" id="template-demo">
-                <ul>
-                    <% for (var i = 0, len = data.length; i < len; i++) { %>
-                    <li><%= data[i] %></li>
-                    <% } %>
-                </ul>
-            </script>
-            <div id="data-container"></div>
 
+                        <!--<div class="price">
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-inner">
+                    <div class="pic"><img alt="" src="/img/meb-2.jpg">
+                    </div>
+
+                    <div class="bottom-part">
+                        <div class="title lp6_subtitle_text">Сочетание обивки из ткани и кожи придают модели индивидуальность.</div>
+
+                        <div class="text lp6_content_text">
+                        </div>
+                        <!-- <div class="price">127 000 руб.</div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-inner">
+                    <div class="pic"><img alt="" src="/img/meb-3.jpg">
+                    </div>
+
+                    <div class="bottom-part">
+                        <div class="title lp6_subtitle_text">Декоративные подушки на подлокотниках обеспечивают дополнительный комфорт. Механизм "Дельфин"</div>
+
+                        <div class="text lp6_content_text">
+                        </div>
+                        <!-- <div class="price">47 000 руб.</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     </div>
 </div>
 
@@ -250,7 +245,7 @@
 <script>
     $(function () {
 
-        $('.pic').magnificPopup({
+     /*   $('.pic').magnificPopup({
             type: 'image',
             closeOnContentClick: true,
             mainClass: 'mfp-img-mobile',
@@ -258,7 +253,7 @@
                 verticalFit: true
             }
 
-        });
+        });*/
 
         var h = window.location.hash.replace(/\#/g, '');
         if (h == 'thanks'){

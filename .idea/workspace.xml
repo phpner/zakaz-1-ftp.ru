@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="21a253ed-9c04-4af6-9046-3a69a11cb2e0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/zakaz-1-ftp.ru.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/zakaz-1-ftp.ru.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/call.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/call.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/lp3.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/lp3.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mebel.php" beforeDir="false" afterPath="$PROJECT_DIR$/mebel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_up.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_up.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mebel.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mebel.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +22,8 @@
       <file leaf-file-name="mebel.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/mebel.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="98" column="53" lean-forward="true" selection-start-line="98" selection-start-column="53" selection-end-line="98" selection-end-column="82" />
+            <state relative-caret-position="-119">
+              <caret line="68" column="97" selection-start-line="68" selection-start-column="97" selection-end-line="68" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -37,8 +31,8 @@
       <file leaf-file-name="mebel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mebel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="72">
+              <caret line="12" column="2" selection-start-line="12" selection-end-line="47" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -46,8 +40,8 @@
       <file leaf-file-name="call.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/call.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="43" column="85" selection-start-line="43" selection-start-column="85" selection-end-line="43" selection-end-column="85" />
+            <state relative-caret-position="208">
+              <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -79,7 +73,7 @@
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="17">
               <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
             </state>
           </provider>
@@ -98,7 +92,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Категория</find>
       <find>Category</find>
       <find>$category</find>
       <find>Компьютеры</find>
@@ -128,6 +121,7 @@
       <find>form-header</find>
       <find>8367</find>
       <find>phone</find>
+      <find>pic</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,12 +140,12 @@
         <option value="$PROJECT_DIR$/libs/clPath.php" />
         <option value="$PROJECT_DIR$/libs/clEPNAPIAccess.php" />
         <option value="$PROJECT_DIR$/css/patch.css" />
-        <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/templates/index.tpl" />
         <option value="$PROJECT_DIR$/templates/_up.tpl" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/lp3.css" />
         <option value="$PROJECT_DIR$/app/call.php" />
+        <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/templates/mebel.tpl" />
         <option value="$PROJECT_DIR$/mebel.php" />
       </list>
@@ -244,24 +238,24 @@
       <workItem from="1530047397667" duration="4864000" />
       <workItem from="1530052672889" duration="32000" />
       <workItem from="1530079800472" duration="13579000" />
-      <workItem from="1530112274695" duration="1328000" />
+      <workItem from="1530112274695" duration="6173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74373000" />
+    <option name="totallyTimeSpent" value="79218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.1663113" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.1663113" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3297062" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.56147987" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -299,6 +293,42 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -578,13 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/_up.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="538">
@@ -611,25 +634,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/call.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="43" column="85" selection-start-line="43" selection-start-column="85" selection-end-line="43" selection-end-column="85" />
+        <state relative-caret-position="208">
+          <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/mebel.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="98" column="53" lean-forward="true" selection-start-line="98" selection-start-column="53" selection-end-line="98" selection-end-column="82" />
+        <state relative-caret-position="-119">
+          <caret line="68" column="97" selection-start-line="68" selection-start-column="97" selection-end-line="68" selection-end-column="97" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mebel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        <state relative-caret-position="72">
+          <caret line="12" column="2" selection-start-line="12" selection-end-line="47" selection-end-column="39" />
         </state>
       </provider>
     </entry>
