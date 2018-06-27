@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="21a253ed-9c04-4af6-9046-3a69a11cb2e0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/call.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/call.php" afterDir="false" />
+    </list>
+    <list id="4d546bdf-c735-4fe7-b776-fe7e0cea7a97" name="Revert: backe mebel.tpl and mebel.php" comment="yes )))">
       <change beforePath="$PROJECT_DIR$/mebel.php" beforeDir="false" afterPath="$PROJECT_DIR$/mebel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mebel.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mebel.tpl" afterDir="false" />
     </list>
@@ -23,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/templates/mebel.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-119">
-              <caret line="68" column="97" selection-start-line="68" selection-start-column="97" selection-end-line="68" selection-end-column="97" />
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
         </entry>
@@ -31,8 +32,8 @@
       <file leaf-file-name="mebel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mebel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="12" column="2" selection-start-line="12" selection-end-line="47" selection-end-column="39" />
+            <state relative-caret-position="140">
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -225,6 +226,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="21a253ed-9c04-4af6-9046-3a69a11cb2e0" name="Default" comment="" />
+      <changelist id="4d546bdf-c735-4fe7-b776-fe7e0cea7a97" name="Revert: backe mebel.tpl and mebel.php" comment="yes )))" />
       <created>1529914825201</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -238,12 +240,12 @@
       <workItem from="1530047397667" duration="4864000" />
       <workItem from="1530052672889" duration="32000" />
       <workItem from="1530079800472" duration="13579000" />
-      <workItem from="1530112274695" duration="6173000" />
+      <workItem from="1530112274695" duration="7080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79218000" />
+    <option name="totallyTimeSpent" value="80125000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -652,14 +654,14 @@
     <entry file="file://$PROJECT_DIR$/templates/mebel.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-119">
-          <caret line="68" column="97" selection-start-line="68" selection-start-column="97" selection-end-line="68" selection-end-column="97" />
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mebel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="12" column="2" selection-start-line="12" selection-end-line="47" selection-end-column="39" />
+        <state relative-caret-position="140">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
         </state>
       </provider>
     </entry>
