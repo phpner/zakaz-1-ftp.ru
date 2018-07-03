@@ -48,7 +48,7 @@
 
             <div class="right-part">
                 <div class="phones-part">
-                    <div class="work-time">Ежедневно: с 09-00 до 20-00</div>
+                    <div class="work-time">Ежедневно: с 09-00 до 19-00</div>
 
                     <div class="phones">
                         <div>
@@ -66,9 +66,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="button"><a class="popup-modal" href="#test-modal">Обратная связь!</a>
-                </div>
+                <div class="button"><a class="popup-modal" href="#test-modal">Обратная связь!</a> </div>
             </div>
         </div>
     </div>
@@ -88,60 +86,91 @@
 <div class="products-with-pic--theme9" data-block-layout="118441" id="_lp_block_14394841">
     <div class="products-wrapper">
         <div class="products-inner">
-            <div class="block-title lp6_title_text">Наша мебель</div>
-
-                    <?php
-                    $i = 0;
-                        foreach($all as $item):
-                    ?>
-                        <div class="product">
-                            <div class="product-inner">
-                                <a class="pic" href='http://www.mebel-esloboda.ru<?php echo $item["img"]?>'>
-                                    <img alt='<?php echo $item["title"] ?>' src='http://www.mebel-esloboda.ru<?php echo $item["img"]?>'>
-                                </a>
-
-                                <div class="bottom-part">
-                                    <div class="title lp6_subtitle_text"><?php echo $item["title"] ?></div>
-                                    <div class="price">
-                                        <?php echo $item["price"]?> руб.
-                                    </div>
-                                    <a href="#zakaz-<?php print $i?>" class="buy-cart">
-                                       заказать
-                                    </a>
-                                    <form action="/app/call.php" method="post" class="mfp-hide white-popup-block form-mod" id="zakaz-<?php print $i?>">
-                                        <h2>заказать:</h2>
-                                        <h3>"<?php echo $item["title"] ?>"</h3>
-                                        <input id="name" name="name" placeholder="Ваше имя" type="text">
-                                        <input id="emal-1" name="email" placeholder="Ваша почта" type="text">
-                                        <input class="phone-1" name="phone" placeholder="Ваш номер телефона" type="text">
-                                        <input type="hidden" name="name-prod" value='<?php echo $item["title"] ?>'>
-                                        <input type="hidden" name="price" value='<?php echo $item["price"] ?>'>
-                                        <input type="hidden" name="old-price" value='<?php echo $item["old-price"] ?>'>
-                                        <input type="hidden" name="from-zakaz">
-                                        <input type="hidden" name="procent" value='<?php print $item["procent"] ?>'>
-                                        <input type="hidden" name="income" value='<?php print $item["income"] ?>'>
-                                        <p>
-                                            <a class="popup-modal-dismiss" href="#">X</a>
-                                        </p>
-                                        <input type="submit">
-                                    </form>
-                                </div>
-                            </div>
+            <ul class="categories_list">
+                <li class="active" data-category="divan">диваны</li>
+                <li data-category="divan-ug">угловые диваны</li>
+                <li data-category="kreslo-krov">кресла-кровати</li>
+            </ul>
+            <div class="divan products_list">
+                <div class="block-title lp6_title_text">Диваны</div>
+                <div class="product">
+                    <div class="product-inner">
+                        <div class="pic">
+                            <img alt="" src="/img/layer_473.png">
                         </div>
-                    <?php
-                    $i++;
-                    endforeach;
-                     ?>
-                </div>
-            <script type="text/template" id="template-demo">
-                <ul>
-                    <% for (var i = 0, len = data.length; i < len; i++) { %>
-                    <li><%= data[i] %></li>
-                    <% } %>
-                </ul>
-            </script>
-            <div id="data-container"></div>
 
+                        <div class="bottom-part">
+                            <div class="title lp6_subtitle_text">"Леон" особый плюс - это полноценное, максимально просторное спальное место.</div>
+
+                            <div class="text lp6_content_text">
+                            </div>
+
+                            <!--<div class="price">
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product-inner">
+                        <div class="pic"><img alt="" src="/img/meb-2.jpg">
+                        </div>
+
+                        <div class="bottom-part">
+                            <div class="title lp6_subtitle_text">Сочетание обивки из ткани и кожи придают модели индивидуальность.</div>
+
+                            <div class="text lp6_content_text">
+                            </div>
+                            <!-- <div class="price">127 000 руб.</div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product-inner">
+                        <div class="pic"><img alt="" src="/img/meb-3.jpg">
+                        </div>
+
+                        <div class="bottom-part">
+                            <div class="title lp6_subtitle_text">Декоративные подушки на подлокотниках обеспечивают дополнительный комфорт. Механизм "Дельфин"</div>
+
+                            <div class="text lp6_content_text">
+                            </div>
+                            <!-- <div class="price">47 000 руб.</div> -->
+                        </div>
+                    </div>
+                </div>
+           </div>
+
+            <div class="divan-ug products_list hide">
+                <div class="block-title lp6_title_text">Угловые диваны</div>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at, autem consectetur cumque deserunt, dicta doloremque dolores dolorum excepturi explicabo facilis iste laudantium non omnis porro quo sapiente, sunt temporibus.
+            </div>
+
+            <div class="kreslo-krov products_list hide">
+                <div class="block-title lp6_title_text">Кресла-кровати</div>
+                <div class="product">
+                    <div class="product-inner">
+                        <div class="pic">
+                            <img alt="" src="/img/layer_473.png">
+                        </div>
+
+                        <div class="bottom-part">
+                            <div class="title lp6_subtitle_text">"Леон" особый плюс - это полноценное, максимально просторное спальное место.</div>
+
+                            <div class="text lp6_content_text">
+                            </div>
+
+                            <!--<div class="price">
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
     </div>
 </div>
 
@@ -214,7 +243,7 @@
                 <div class="block-inner">
                     <div class="address">г. Краснодар, ул. Калинина, 1</div>
 
-                    <div class="work-timer">Мы работаем: с 9:00 до 20:00<br>
+                    <div class="work-timer">Мы работаем: с 9:00 до 19:00<br>
                         без выходных и праздников</div>
 
                     <div class="social-block"><a href="https://twitter.com/vadshopru" target="_blank"><img alt="Twitter" src="/img/fgs16_twitter_4.svg"></a> <a href="https://www.facebook.com/groups/vadshop.ru/" target=
@@ -250,7 +279,7 @@
 <script>
     $(function () {
 
-        $('.pic').magnificPopup({
+     /*   $('.pic').magnificPopup({
             type: 'image',
             closeOnContentClick: true,
             mainClass: 'mfp-img-mobile',
@@ -258,8 +287,19 @@
                 verticalFit: true
             }
 
-        });
+        });*/
 
+
+        /* categories */
+
+        $(".categories_list li").click(function () {
+            $(".categories_list li").removeClass("active");
+            $(this).addClass("active");
+            var category = $(this).attr("data-category");
+            $(".products_list").addClass("hide");
+            $("."+category).removeClass("hide");
+        });
+        
         var h = window.location.hash.replace(/\#/g, '');
         if (h == 'thanks'){
             $(".overlay_in").fadeIn(200);
