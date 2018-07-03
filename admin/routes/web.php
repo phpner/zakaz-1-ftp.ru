@@ -11,18 +11,22 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/mebel', function () {
     return view('welcome');
 });
 
 Auth::routes();
 
 
-Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/mebel/admin', 'AdminController@index')->name('admin');
 
-Route::get('/admin/add_page', 'AdminController@add_page_get')->name('add_page');
+Route::get('/mebel/add_page', 'AdminController@add_page_get')->name('add_page');
 
-Route::post('/admin/add_page', 'AdminController@add_page_post')->name('add_page_post');
+Route::post('/mebel/add_page', 'AdminController@add_page_post')->name('add_page_post');
 
-Route::get('/admin/del/{id}', 'AdminController@del_page_post')->name('del_page_post');
+Route::get('/mebel/del/{id}', 'AdminController@del_page_post')->name('del_page_post');
+
+Route::get('/mebel/edit/{id}', 'AdminController@edit_page_post')->name('edit_page_post');
+
+Route::post('/mebel/update/{id}', 'AdminController@update_page_post')->name('update_page_post');
 

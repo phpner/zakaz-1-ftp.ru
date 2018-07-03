@@ -17,7 +17,10 @@ class Pages extends Migration
         {
         	$table->increments('id');
         	$table->text('title');
-        	$table->text('text');
+        	$table->text('harak');
+        	$table->text('descr');
+        	$table->text('file_url');
+        	$table->text('price');
 	        $table->timestamps();
         });
     }

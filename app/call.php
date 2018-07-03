@@ -86,4 +86,3 @@ function emailTo($message, $subject){
 
 	exit;
 }
-?>

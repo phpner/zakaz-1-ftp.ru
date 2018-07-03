@@ -26,10 +26,7 @@ RewriteRule ^rss/?$ /rss.php [L]
 
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^mebel/?$ /mebel.php [L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^panel/?$ admin/ [L]
+RewriteRule ^mebel/?(.*)?|login/?(.*)?|register/?$ admin/$1 [L]
 
 
 
