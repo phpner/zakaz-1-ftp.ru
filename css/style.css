@@ -122,6 +122,17 @@ products-inner .hide{
     display: none;
 }
 @media all and (max-width: 500px){
+	.categories_list li{
+		padding: 10px !important;
+		font-size: .6rem;
+	}
+	.products-with-pic--theme9 .price,.products-with-pic--theme9 .buy-cart{
+		display: block;
+		margin-bottom: 10px;
+		margin-left :0;
+	}
+}
+@media all and (max-width: 720px){
     .categories_list li{
         padding: 10px !important;
         font-size: .6rem;

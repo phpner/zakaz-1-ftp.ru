@@ -93,10 +93,12 @@
 <div class="products-with-pic--theme9" data-block-layout="118441" id="_lp_block_14394841">
     <div class="products-wrapper">
         <div class="products-inner">
+            <div class="block-title lp6_title_text">Наша мебель</div>
             <ul class="categories_list">
-                <li class="active" data-category="divan">диваны</li>
-                <li data-category="divan-ug">угловые диваны</li>
-                <li data-category="kreslo-krov">кресла-кровати</li>
+                <li class="active" data-category="divan">Диваны</li>
+                <li data-category="divan-ug">Угловые диваны</li>
+                <li data-category="kreslo-krov">Кресла-кровати</li>
+                <li data-category="kreslo-for-relax">Кресла для отдыха</li>
             </ul>
             <!--Раздел диван-->
             <div class="divan products_list">
@@ -494,6 +496,27 @@
 
             </div>
             <!-- конец раздела угловые кресла-кровати-->
+            <!--Раздел Кресло для отдыха-->
+            <div class="kreslo-for-relax products_list hide">
+                <div class="block-title lp6_title_text">Кресла для отдыха</div>
+                <div class="product">
+                    <div class="product-inner">
+                        <div class="pic">
+                            <img alt="" src="/img/layer_473.png">
+                        </div>
+
+                        <div class="bottom-part">
+                            <div class="title lp6_subtitle_text">"Леон" особый плюс - это полноценное, максимально просторное спальное место.</div>
+
+                            <div class="text lp6_content_text">
+                            </div>
+
+                            <!--<div class="price">
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

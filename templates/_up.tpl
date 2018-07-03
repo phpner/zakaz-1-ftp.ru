@@ -91,7 +91,7 @@
 <nav class="navbar navbar-default new-navbar" role="navigation">
 	<div class="container">
 		<ul class="nav navbar-nav">
-			<!--<li>
+			<li>
 				<div class="onoffswitch">
 					<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked="checked">
 					<label class="onoffswitch-label" for="myonoffswitch">
@@ -99,7 +99,7 @@
 						<span class="onoffswitch-switch"></span>
 					</label>
 				</div>
-			</li>-->
+			</li>
 			<li><a href="/"><?php print $Lang->GetString('Main page'); ?></a></li>
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php print $Lang->GetString('Categories'); ?><span class="caret"></span></a>
