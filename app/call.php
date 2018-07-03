@@ -1,18 +1,29 @@
 <?php
-$time = date("F j, Y, g:i a");
-	if (isset($_POST['from-zakaz'])){
+//список месяцев с названиями для замены
+$_monthsList = array(".01." => "января", ".02." => "февраля",
+	".03." => "марта", ".04." => "апреля", ".05." => "мая", ".06." => "июня",
+	".07." => "июля", ".08." => "августа", ".09." => "сентября",
+	".10." => "октября", ".11." => "ноября", ".12." => "декабря");
+
+//текущая дата
+$currentDate = date("d.m.Y, g:i a");
+//переменная $currentDate теперь хранит текущую дату в формате 22.07.2015
+
+//но так как наша задача - вывод русской даты,
+//заменяем число месяца на название:
+$_mD = date(".m."); //для замены
+$time = str_replace($_mD, " ".$_monthsList[$_mD]." ", $currentDate);
+
+	if (isset($_POST['name-pro'])){
 		$name = htmlspecialchars($_POST['name']);
 		$email = htmlspecialchars($_POST['email']);
 		$phone = htmlspecialchars($_POST['phone']);
-		$name_prod = htmlspecialchars($_POST['name-prod']);
-		$new_price = htmlspecialchars($_POST['price']);
-		$old_price = htmlspecialchars($_POST['old-price']);
-		$procent = htmlspecialchars($_POST['procent']);
-		$income = htmlspecialchars($_POST['income']);
+		$name_prod = htmlspecialchars($_POST['name-pro']);
+		$name_price = htmlspecialchars($_POST['name-price']);
 
 		$message = "<div style='text-align:center;width:70%;margin:  auto;'>
 				 <p>
-					    <h1>Форма заказа : через кнопку 'Обратная связь!' </h1>
+					    <h1>Форма заказа : через кнопку 'заказать' на сайте VadShop</h1>
 					    <h2> <b>Название товара</b>: $name_prod </h2>
 					    </p>
 					    <p>
@@ -25,19 +36,11 @@ $time = date("F j, Y, g:i a");
 					    <b>Телефон</b>: $phone
 					    </p>					    
 					     <p>
-					      <b>Процент на нашем сайте 'VadShop'</b>: $procent%
+					      <b>Цена на нашем сайте 'VadShop'</b>: $name_price
 					    </p>
 					    <p>
-					      <b>Цена на нашем сайте 'VadShop'</b>: $new_price руб.
-					    </p>					  
-					    <p>
-					      <b>Цена на cайте  mebel-esloboda.ru</b>: $old_price руб.
+					      <b>Время</b>: $time 
 					    </p>
-					     <p>
-					      <b>Доход от $procent%</b>: $income руб.
-					    </p>
-					    <p>
-					    <b> Время заказа</b> : $time 
 				    </p>
 				    </div>";
 

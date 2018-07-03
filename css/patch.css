@@ -403,7 +403,13 @@ html .header-seven--theme9.inverse .header-seven-wrapper { background-color: rgb
 html .header-seven--theme9.inverse .right-part .button a { background-color: rgb(67, 41, 40); }
 html .header-seven--theme9.inverse .right-part .button a { background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.06) 0%, transparent 100%); background-image: linear-gradient(rgba(255, 255, 255, 0.06) 0%, transparent 100%); }
 html .products-with-pic--theme9 .product .bottom-part .button a { background-color: rgb(254, 121, 3); }
-html .products-with-pic--theme9 .product-inner { background-color: rgba(39, 24, 22, 0.098); }
+html .products-with-pic--theme9 .product-inner {
+    position: relative;
+    background-color: rgba(39, 24, 22, 0.098);
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
 html .products--theme9 .product .top-part { background-color: rgb(39, 24, 22); }
 html .products--theme9 .product .bottom-part .button a { background-color: rgb(254, 121, 3); }
 html .products--theme9 .product-inner { background-color: rgba(39, 24, 22, 0.098); }

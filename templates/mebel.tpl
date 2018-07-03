@@ -25,9 +25,16 @@
 
 <div class="mfp-hide white-popup-block" id="test-modal">
     <form action="/app/call.php" method="post" class="form-mod" id="form-1" name="form-1">
-        <h2>заказать звонок</h2>
-        <input id="name" name="name" placeholder="Ваше имя" type="text"> <input id="emal-1" name="email" placeholder="Ваша почта" type="text"> <input class="phone-1" name="phone" placeholder=
-        "Ваш номер телефона" type="text">
+        <h2>
+            заказать звонок: <br>
+            <h4></h4>
+            <span class="price-ti"></span><br><br>
+        </h2>
+        <input id="name" name="name" placeholder="Ваше имя" type="text">
+        <input id="emal-1" name="email" placeholder="Ваша почта" type="text">
+        <input class="phone-1" name="phone" placeholder="Ваш номер телефона" type="text">
+        <span class="input-price"></span>
+        <span class="input-name"></span>
         <input type="submit">
     </form>
 
@@ -91,62 +98,380 @@
                 <li data-category="divan-ug">угловые диваны</li>
                 <li data-category="kreslo-krov">кресла-кровати</li>
             </ul>
+            <!--Раздел диван-->
             <div class="divan products_list">
                 <div class="block-title lp6_title_text">Диваны</div>
                 <div class="product">
                     <div class="product-inner">
                         <div class="pic">
-                            <img alt="" src="/img/layer_473.png">
+                            <img alt="" src="/img/catalog/Диван Аккордеон 1,4м (без декоров).jpg">
                         </div>
-
                         <div class="bottom-part">
-                            <div class="title lp6_subtitle_text">"Леон" особый плюс - это полноценное, максимально просторное спальное место.</div>
-
-                            <div class="text lp6_content_text">
+                            <div class="descr">
+                                <h2>Диван Аккордеон 1,4м (без декоров)</h2>
+                                <b>Габаритные размеры:</b> 1600*1000*950 <br>
+                                <b>bСпальное место:</b> 1400*1950 <br>
+                                <b>bМеханизм:</b> "Аккордеон"
                             </div>
-
-                            <!--<div class="price">
-                            </div>-->
+                        </div>
+                        <div class="title lp6_subtitle_text">
+                            Диван «Аккордеон» – решение для тех, кто любит сочетание стиля и удобства в быту. Особый шарм придают дивану накладки из МДФ, установленные на декоративные хромированные стойки. с механизмом «аккордеон» станет украшением интерьера благодаря современной форме, а возможность выбрать ткань для обивки позволит сделать его центром композиции или наоборот, вписать в существующее помещение незаметно.
+                        </div>
+                        <div class="price-in">
+                            <span class="price">
+                                Цена: 17 175  руб.
+                            </span>
+                            <a class="buy-cart popup-modal" href="#test-modal" data-price="17 175 руб" data-name="Диван Аккордеон 1,4м (без декоров)">
+                                Заказать
+                            </a>
                         </div>
                     </div>
                 </div>
-
+                <!--контент продукта 2--->
                 <div class="product">
                     <div class="product-inner">
-                        <div class="pic"><img alt="" src="/img/meb-2.jpg">
+                        <div class="pic">
+                            <img alt="" src="/img/catalog/Divan%20Akkordeon1,15m(bez%20dekorov).jpg">
                         </div>
-
                         <div class="bottom-part">
-                            <div class="title lp6_subtitle_text">Сочетание обивки из ткани и кожи придают модели индивидуальность.</div>
-
-                            <div class="text lp6_content_text">
+                            <div class="descr">
+                                <h2>Диван Аккордеон 1,15м (без декоров)</h2>
+                                <b>Габаритные размеры:</b> 1350*1000*950 <br>
+                                <b>Спальное место:</b> 1150*1950 <br>
+                               <b>Механизм:</b> "Аккордеон"
                             </div>
-                            <!-- <div class="price">127 000 руб.</div> -->
+                        </div>
+                        <div class="title lp6_subtitle_text">
+                            У данной модели дивана ширина спального места 1150мм. Механизм "Аккордеон" позволяет формировать ровное спальное место, к тому же он надежен и не требует значительных усилий при его трансформации. Модель имеет вместительный бельевой ящик для постельных принадлежностей. Данный диван предполагает несколько видов подлокотников: простые, без подлокотников, с декоративными вставками из МДФ с тиснением под натуральное дерево "Волна".
+                        </div>
+                        <div class="price-in">
+                            <span class="price">
+                                Цена: 16 065 руб.
+                            </span>
+                            <a class="buy-cart popup-modal" data-price="16 065 руб" data-name="Диван Аккордеон 1,15м (без декоров)"  href="#test-modal">
+                                Заказать
+                            </a>
                         </div>
                     </div>
                 </div>
+                <!--конец контент продукта 2--->
 
+                <!--контент продукта 3--->
                 <div class="product">
                     <div class="product-inner">
-                        <div class="pic"><img alt="" src="/img/meb-3.jpg">
+                        <div class="pic">
+                            <img alt="" src="/img/catalog/DivanKlik-klak(podushkami).jpg">
                         </div>
-
                         <div class="bottom-part">
-                            <div class="title lp6_subtitle_text">Декоративные подушки на подлокотниках обеспечивают дополнительный комфорт. Механизм "Дельфин"</div>
-
-                            <div class="text lp6_content_text">
+                            <div class="descr">
+                                <h2>Диван Клик-клак (с подушками)</h2>
+                                <b>Габаритные размеры:</b> 2100*1000*1150 <br>
+                                <b>Спальное место:</b> 1400*2100 <br>
                             </div>
-                            <!-- <div class="price">47 000 руб.</div> -->
+                        </div>
+                        <div class="title lp6_subtitle_text">
+                            Диван изготовлен на основе надежного механизма "Клик-кляк", подходящего для ежедневного использования. Механизм дивана позволяет изменять положение сидения в нескольких видах, имитируя "подлокотники" или "подголовники", и создавать диван-кровать многофункциональным и практичным. Диван комплектуется двумя удобными подушками.
+                        </div>
+                        <div class="price-in">
+                            <span class="price">
+                                Цена: 24 015 руб.
+                            </span>
+                            <a class="buy-cart popup-modal" data-price="24 015 руб." data-name="Диван Клик-клак (с подушками)"  href="#test-modal">
+                                Заказать
+                            </a>
                         </div>
                     </div>
                 </div>
+                <!--конец контент продукта 3--->
+
+                <!--контент продукта 4--->
+                <div class="product">
+                    <div class="product-inner">
+                        <div class="pic">
+                            <img alt="" src="/img/catalog/DivanKlik-klakModern.jpg">
+                        </div>
+                        <div class="bottom-part">
+                            <div class="descr">
+                                <h2>Диван Клик-клак (с подушками)</h2>
+                                <b>Размеры:</b> 2000*950*1100 <br>
+                                <b>Спальное место:</b> 1300*2000 <br>
+                                <b>Механизм:</b> "Клик-кляк". <br>
+
+                            </div>
+                        </div>
+                        <div class="title lp6_subtitle_text">
+                            Диван имеет изысканную форму и превосходно смотрится в любом интерьере. Механизм "клик-клак" и подлокотники - трансформер превратят в удобную кровать. Благодаря съемному чехлу на молнии он прослужит Вам очень долго. В комплектацию входит ящик для белья. Изящность дивану придают простеганные буфы.
+                            Основные преимущества:
+                            - компактность;
+                            - высокая надежность металлической конструкции;
+                            - полностью съёмные чехлы, ящик для белья;
+                            - большое, высокое и ровное спальное место;
+                            - современный и стильный дизайн.
+
+                        </div>
+                        <div class="price-in">
+                            <span class="price">
+                                Цена: 22 950 руб
+                            </span>
+                            <a class="buy-cart popup-modal" data-price="22 950 руб" data-name="Диван Клик-клак (с подушками)"  href="#test-modal">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--конец контент продукта 4--->
+
+                <!--контент продукта 5--->
+                <div class="product">
+                    <div class="product-inner">
+                        <div class="pic">
+                            <img alt="" src="/img/catalog/DivanRetro.jpg">
+                        </div>
+                        <div class="bottom-part">
+                            <div class="descr">
+                                <h2>Диван Ретро</h2>
+                                <b>Габаритные размеры дивана:</b> 2200*900*950 <br>
+                                <b>Спальное место:</b> 1250*1900 <br>
+                                <b>Габаритные размеры кресла-кровати:</b> 950*900*950 <br>
+                                <b>Спальное место:</b> 600*1950 <br>
+                                <b>Габаритные размеры кресла для отдыха:</b> 950*900*950 <br>
+                                <b>Механизм дивана:</b> "Книжка" <br>
+                                <b>Механизм кресла</b> - кровати: "Выкатной". <br>
+                                <b>Наполнитель:</b> Пружинный блок.
+
+                            </div>
+                        </div>
+                        <div class="title lp6_subtitle_text">
+                            Данная модель идеальна для малогабаритных квартир, так как занимает минимум пространства в сложенном состоянии, а при раскладывании образует полноценную двухспальную кровать кровать с идеально ровным спальным местом.
+                            Так же набор можно заказать с креслом для отдыха.
+
+
+                        </div>
+                        <div class="price-in">
+                            <span class="price">
+                                Цена: 15 563 руб.
+                            </span>
+                            <a class="buy-cart popup-modal" data-price="15 563 руб." data-name="Диван Ретро"  href="#test-modal">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--конец контент продукта 5--->
+
+                <!--контент продукта 6--->
+                <div class="product">
+                    <div class="product-inner">
+                        <div class="pic">
+                            <img alt="" src="/img/catalog/DivanRomashka.jpg">
+                        </div>
+                        <div class="bottom-part">
+                            <div class="descr">
+                                <h2>Диван Ромашка</h2>
+                                <b>Габаритные размеры дивана:</b> 1950*1000*1000 <br>
+                                <b>Спальное место:</b> 1500*1950 <br>
+                                <b>Габаритные размеры кресла-кровати:</b> 1000*1000*1000 <br>
+                                <b>Спальное место:</b> 600*1950
+                                <b>Габаритные размеры кресла для отдыха:</b> 1000*1000*1000 <br>
+                               <b>Механизм:</b>  "Выкатной"
+
+
+                            </div>
+                        </div>
+                        <div class="title lp6_subtitle_text">
+                            Истинные ценители мягкой мебели с удовольствием оценят классический дизайн набора "Ромашка". Благодаря высокой спинке модель обеспечивает особый комфорт во воремя отдыха, а декоративные вставки из дерева на подлокотниках придают особую изящность модели. Набор выполнен на основе механизма трансформации "Выкатной", который создаст достаточно больное спальное место, будучи весьма компактными в сложенном состоянии.
+                            Так же набор можно заказать с креслом для отдыха.
+                        </div>
+                        <div class="price-in">
+                            <span class="price">
+                                Цена: 23 235  руб.
+                            </span>
+                            <a class="buy-cart popup-modal" data-price="23 235 руб." data-name="Диван Ромашка"  href="#test-modal">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--конец контент продукта 6--->
+
+                <!--контент продукта 7--->
+                <div class="product">
+                    <div class="product-inner">
+                        <div class="pic">
+                            <img alt="" src="/img/catalog/YevroknizhkaLeon(podushkiformovannyye).jpg">
+                        </div>
+                        <div class="bottom-part">
+                            <div class="descr">
+                                <h2>Еврокнижка Леон (подушки формованные)</h2>
+                                <b>Габаритные размеры:</b> 2200*950*920 <br>
+                                <b>Спальное место:</b> 1540*1900 <br>
+                                <b>Механизм:</b> «Тик-Так» <br>
+                                <b>Наполнитель:</b> ППУ высокой плотности, холкон <br>
+
+
+
+                            </div>
+                        </div>
+                        <div class="title lp6_subtitle_text">
+                            "Леон" снабжен вместительным ящиком для постельных принадлежностей.
+                            Особый плюс - это полноценное, максимально просторное спальное место.
+                        </div>
+                        <div class="price-in">
+                            <span class="price">
+                                Цена: 27 090 руб.
+                            </span>
+                            <a class="buy-cart popup-modal" data-price="27 090 руб." data-name="Еврокнижка Леон (подушки формованные)"  href="#test-modal">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--конец контент продукта 7--->
+
+                <!--контент продукта 8--->
+                <div class="product">
+                    <div class="product-inner">
+                        <div class="pic">
+                            <img alt="" src="/img/catalog/YevroknizhkaOptima.jpg">
+                        </div>
+                        <div class="bottom-part">
+                            <div class="descr">
+                                <h2>Еврокнижка Оптима</h2>
+                                <b>Габаритные размеры:</b> 1950*820*8000 <br>
+                                <b>Спальное место:</b> 1370*1950 <br>
+                               <b>Механизм:</b>  «Еврокнижка» <br>
+                                <b>Наполнитель:</b> ППУ <br>
+                               <b>Каркас:</b>  Берёза
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="title lp6_subtitle_text">
+                            Диван "Оптима" выполнен на каркасе берёзы. Функциональность, удобство трансформации, надежность конструкции. Снабжён он просторными ящиком для белья. Раскладывая диван "Оптима", вы превращаете его в в полноценное спальное место, просто достаточно вытянуть сидение вперед, а спинку опустить на освободившееся место. Его плюс - механизм "Еврокнижка" - это один их самых популярных видов мебели. Дизайнеры мебели оценили принцип "Еврокнижки", создав большое разнообразие моделей и расцветок таких диванов.
+                        </div>
+                        <div class="price-in">
+                            <span class="price">
+                                Цена: 10 560 руб.
+                            </span>
+                            <a class="buy-cart popup-modal" data-price="10 560 руб." data-name="Еврокнижка Оптима"  href="#test-modal">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--конец контент продукта 8--->
+
+                <!--контент продукта 9--->
+                <div class="product">
+                    <div class="product-inner">
+                        <div class="pic">
+                            <img alt="" src="/img/catalog/YevroknizhkaTik-tak(podushkiformovannyye).jpg">
+                        </div>
+                        <div class="bottom-part">
+                            <h2>Еврокнижка Тик-так (подушки формованные)</h2>
+                            <div class="descr">
+
+                                <b>Габаритные размеры: </b> 2000*900*770 <br>
+                                <b>Спальное место:</b>  1350*2000 <br>
+                               <b>Механизм:</b>   "Еврокнижка" <br>
+                                <b>Подушки:</b>  формованные <br>
+
+                            </div>
+                        </div>
+                        <div class="title lp6_subtitle_text">
+                            Данная модель предоставлена в нескольких вариантах исполнения: угловой, прямой диван, кресло-кровать, и креесло для отдыха. Дива имеет простой в использовании и надёжный механизм трансформации "Еврокнижка", который легко превратит его в полноценную кровать с ровным спальным местом.
+                            Строгие линии, декоративная отделка из МДФ, а так же широкий выбор цветовой палитры ткани останавливают покупателя на выборе этой модели. Угловой диван "Тик-Так" - универсальная модель, так как при помощи несложных действий можно изменять положение углового сегмента.
+
+                        </div>
+                        <div class="price-in">
+                            <span class="price">
+                                Цена: 21 825 руб.
+                            </span>
+                            <a class="buy-cart popup-modal" data-price="21 825 руб." data-name="Еврокнижка Тик-так (подушки формованные)"  href="#test-modal">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--конец контент продукта 9--->
+
+                <!--контент продукта 10--->
+                <div class="product">
+                    <div class="product-inner">
+                        <div class="pic">
+                            <img alt="" src="/img/catalog/Kanape(ugol)otuglovogodivanaKlikklakmodern.jpg">
+                        </div>
+                        <div class="bottom-part">
+                            <h2>Канапе (угол) от углового дивана Клик-клак модерн</h2>
+                            <div class="descr">
+                                <b>Габаритные размеры:</b> 3100*1800*1070 <br>
+                                <b>Спальное место:</b> 3100*1200 <br>
+                                <b>Механизм: </b>"Клик-клак" в три положения
+
+
+                            </div>
+                        </div>
+                        <div class="title lp6_subtitle_text">
+                            Модульный угловой диван «Клик-клак» состоит из двух составных частей: прямого дивана и канапе. Все модули можно самостоятельно разбирать и соединить между собой по собственному желанию. Эта модель привлекает внимание также тем, что каждая часть может служить самостоятельным предметом мебели.
+                            Особенностью такого механизма является возможность трансформации дивана в три положения - для сидения, для отдыха в полусидячем положении и для сна. Основание дивана составляют ортопедические латы.
+
+                        </div>
+                        <div class="price-in">
+                            <span class="price">
+                                Цена: 25 200  руб.
+                            </span>
+                            <a class="buy-cart popup-modal" data-price="25 200 руб." data-name="Канапе (угол) от углового дивана Клик-клак модерн"  href="#test-modal">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--конец контент продукта 10--->
+
+                <!--контент продукта 11--->
+                <div class="product">
+                    <div class="product-inner">
+                        <div class="pic">
+                            <img alt="" src="/img/catalog/SofaKlikklakmodern.jpg">
+                        </div>
+                        <div class="bottom-part">
+                            <h2>Софа Клик-клак модерн</h2>
+                            <div class="descr">
+                                <b>Габаритные размеры:</b>  3100*1800*1070 <br>
+                                <b>Спальное место:</b>  3100*1200 <br>
+                                <b>Механизм:</b>  "Клик-клак" в три положения
+                            </div>
+                        </div>
+                        <div class="title lp6_subtitle_text">
+                            Модульный угловой диван «Клик-клак» состоит из двух составных частей: прямого дивана и канапе. Все модули можно самостоятельно разбирать и соединить между собой по собственному желанию. Эта модель привлекает внимание также тем, что каждая часть может служить самостоятельным предметом мебели.
+                            Особенностью такого механизма является возможность трансформации дивана в три положения - для сидения, для отдыха в полусидячем положении и для сна. Основание дивана составляют ортопедические латы.
+
+                        </div>
+                        <div class="price-in">
+                            <span class="price">
+                                Цена: 25 200  руб.
+                            </span>
+                            <a class="buy-cart popup-modal" data-price="25 200 руб." data-name="Софа Клик-клак модерн"  href="#test-modal">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--конец контент продукта 11--->
+
            </div>
+            <!--Конец раздела диван-->
 
+            <!--раздел угловые диваны-->
             <div class="divan-ug products_list hide">
                 <div class="block-title lp6_title_text">Угловые диваны</div>
                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at, autem consectetur cumque deserunt, dicta doloremque dolores dolorum excepturi explicabo facilis iste laudantium non omnis porro quo sapiente, sunt temporibus.
             </div>
+            <!-- конец раздела угловые диваны-->
 
+            <!--раздел угловые кресла-кровати-->
             <div class="kreslo-krov products_list hide">
                 <div class="block-title lp6_title_text">Кресла-кровати</div>
                 <div class="product">
@@ -168,6 +493,7 @@
                 </div>
 
             </div>
+            <!-- конец раздела угловые кресла-кровати-->
         </div>
     </div>
 </div>
@@ -276,6 +602,7 @@
 
 <script src="/js/pagination.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+
 <script>
     $(function () {
 
@@ -299,7 +626,7 @@
             $(".products_list").addClass("hide");
             $("."+category).removeClass("hide");
         });
-        
+
         var h = window.location.hash.replace(/\#/g, '');
         if (h == 'thanks'){
             $(".overlay_in").fadeIn(200);
@@ -335,12 +662,31 @@
             });
         });
 
-
         $('.popup-modal,.buy-cart').magnificPopup({
             type: 'inline',
             preloader: false,
             focus: '#username',
-            modal: true
+            modal: true,
+            callbacks: {
+            beforeOpen: function() {
+            var el = this.st.el;
+            var name = $(el).attr('data-name');
+            var price = $(el).attr('data-price');
+            console.log(name);
+                if(typeof name == "undefined"){
+                    $(".form-mod .input-name").html('');
+                    $(".form-mod .input-price").html('');
+                    $(".form-mod h4").css('display','none');
+                    $(".form-mod .price-ti").css('display','none');
+                    return
+                }
+            $(".form-mod h4").css('display','block').text(name);
+            $(".form-mod .price-ti").css('display','block').text(price);
+            $(".form-mod .input-name").html(`<input type="hidden" name="name-pro" value="${name}">`);
+            $(".form-mod .input-price").html(`<input type="hidden" name="name-price" value="${price}">`);
+                console.log($(el).attr('data-name'));
+            },
+            }
         });
         $(document).on('click', '.popup-modal-dismiss', function (e) {
             e.preventDefault();
