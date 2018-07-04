@@ -63,6 +63,10 @@ return [
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
         ],
+	    'laradrop' => [
+		    'driver' => 'local',
+		    'root' => public_path('uploads'), // will put files in 'public/upload' directory
+	    ],
 
     ],
 

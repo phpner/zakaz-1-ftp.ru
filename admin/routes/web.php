@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/mebel', function () {
-    return view('welcome');
-});
+Route::get('/admin/', 'IndexController@index');
 
 Auth::routes();
 

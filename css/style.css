@@ -1,3 +1,6 @@
+h1{
+	font-size: inherit;
+}
 .mapp{
 	position: absolute;
 	top: 0;
@@ -92,6 +95,14 @@
 	text-align: left;
     display: flex;
     flex-flow: row wrap;
+	justify-content: space-between;
+}
+.products_list:last-child{
+	justify-self: self-end;
+}
+.products_list::after {
+	content: "";
+	flex-basis: 33%;
 }
 .categories_list{
     border-bottom: 1px solid #dabc94;

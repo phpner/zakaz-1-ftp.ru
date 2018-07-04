@@ -26,7 +26,7 @@ class AdminController extends Controller
     public function index()
 
     {
-    	$date = Page::all()->sortByDesc("id");;
+    	$date = Page::all()->sortByDesc("id");
         return view('admin',['date' => $date]);
     }
 
@@ -36,29 +36,28 @@ class AdminController extends Controller
     }
     public function add_page_post(Request $request){
 
-	   /* $this->validate($request, [
+	$this->validate($request, [
 		    'title' => 'required|max:255',
-		    'big-text' => 'required',
-	    ]);*/
+		    'img-url' => 'required',
+		    'price' => 'required',
+			'descr' => 'required',
+	    ]);
 
     	$page = new Page();
 
-    	$file = $request->file->getClientOriginalName();
-
 	    $page->title = $request->input('title');
-	    $page->harak = $request->input('harak');
 	    $page->descr = $request->input('descr');
 	    $page->price = $request->input('price');
-	    $page->cate = $file ;
-	    $page->file_name = $file ;
+	    $page->cate = $request->input('cate'); ;
+	    $page->file_url = $request->input('img-url'); ;
 
-
+/*
 	    $imageName =  $file.'.'.$request->file('file')->getClientOriginalExtension();
 
 	    Storage::disk('local')->put('file.txt', 'Contents');
 	    $request->file('file')->move(
 		    base_path() . '/public/images/catalog/', $imageName
-	    );
+	    );*/
 
 	    if($page->save()) return redirect(route('admin'));
 
@@ -76,13 +75,18 @@ class AdminController extends Controller
     }
     public function update_page_post(Request $request,$id)
     {
+	    $this->validate($request, [
+		    'title' => 'required|max:255',
+		    'img-url' => 'required',
+		    'price' => 'required',
+		    'descr' => 'required',
+	    ]);
 	    $page = Page::find($id);
 	    $page->title = $request->input('title');
-	    $page->harak = $request->input('harak');
 	    $page->descr = $request->input('descr');
 	    $page->price = $request->input('price');
 	    $page->cate = $request->input('cate');
-	    $page->file_name = ($request->hasFile('file')) ? $request->file->getClientOriginalName() : '';
+	    $page->file_url = $request->input('img-url');;
 
 	    if($page->save()) return redirect(route('admin'));
 

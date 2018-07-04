@@ -304,6 +304,9 @@ jQuery.fn.laradrop = function(options) {
 	function getPreviewContainer(){
 		return views.preview;
 	}
+    jQuery.fn.laradrop.destroy  = function () {
+        $(this).remove();
+    }
 	
 	return laradropObj;
 }

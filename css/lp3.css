@@ -8306,9 +8306,10 @@ table.table2 th {
 
 .products-with-pic--theme9 .products-inner {
 	padding: 30px 0 30px;
-	max-width: 970px;
+	max-width: 90%;
 	margin: 0 auto;
 	text-align: center;
+	justify-content: center;
 }
 
 .products-with-pic--theme9 .block-title {
@@ -8345,8 +8346,7 @@ table.table2 th {
 @media all and (min-width: 500px) {
 	.products-with-pic--theme9 .product {
 		width: 90%;
-		margin: 5px;
-		margin: auto;
+		margin: 5px auto;
 	}
 }
 
@@ -8355,6 +8355,15 @@ table.table2 th {
 		width: 48%;
 		margin: 5px;
 		box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.35);
+		max-width: 600px;
+	}
+}
+
+@media all and (min-width: 992px) {
+	.products-with-pic--theme9 .product {
+		width: 32%;
+		margin: 5px;
+		max-width: 600px;
 	}
 }
 
@@ -8366,7 +8375,7 @@ table.table2 th {
 
 .products-with-pic--theme9 .product .bottom-part {
 	position: relative;
-	padding: 25px 20px;
+	padding: 25px 20px 0 20px;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	border-top: none;
 	overflow: hidden;

@@ -25,6 +25,7 @@ RewriteRule ^search/?$ /ali_search.php [L]
 RewriteRule ^rss/?$ /rss.php [L]
 
 
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^mebel/?(.*)?|login/?(.*)?|register/?$ admin/$1 [L]
 
