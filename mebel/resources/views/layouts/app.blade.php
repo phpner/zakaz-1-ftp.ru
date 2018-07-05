@@ -17,7 +17,7 @@
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/admin/public/vendor/jasekz/laradrop/css/styles.css">
+    <link rel="stylesheet" href="/mebel/css/styles-img.css">
 
     <!-- Styles -->
     <link href="{{ asset('/mebel/css/app.css') }}" rel="stylesheet">
@@ -38,10 +38,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('add_page') }}">Добавить товар</a>
                     </li>
-                       <!-- <li class="nav-item">
-                            <a class="nav-link" href="{{ route('seo') }}">SEO</a>
-                        </li>
-                        -->
+
                     @endif
                 </ul>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -113,8 +110,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
     <script src="{{ asset('/mebel/js/bootstrap.min.js') }}"  defer></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js" defer></script>
-    <script src="/admin/public/vendor/jasekz/laradrop/js/enyo.dropzone.js" defer></script>
-    <script src="/admin/public/vendor/jasekz/laradrop/js/laradrop.js" defer></script>
+    <script src="/mebel/js/enyo.dropzone.js" defer></script>
+    <script src="/mebel/js/laradrop.js" defer></script>
     <script src="{{ asset('/mebel/js/tinymce.min.js') }}" defer ></script>
     <script>
         $(document).ready(function () {

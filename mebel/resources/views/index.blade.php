@@ -123,7 +123,7 @@
                                     <span class="price">
                                         Цена: {{$dat->price}} руб.
                                     </span>
-                                    <a class="buy-cart popup-modal" href="#test-modal" data-price="17 175 руб" data-name="Диван Аккордеон 1,4м (без декоров)">
+                                    <a class="buy-cart popup-modal" href="#test-modal" data-price="{{$dat->price}}руб" data-name="{{$dat->title}}">
                                         Заказать
                                     </a>
                                 </div>
@@ -156,7 +156,7 @@
                                     <span class="price">
                                         Цена: {{$dat->price}} руб.
                                     </span>
-                                    <a class="buy-cart popup-modal" href="#test-modal" data-price="17 175 руб" data-name="Диван Аккордеон 1,4м (без декоров)">
+                                    <a class="buy-cart popup-modal" href="#test-modal" data-price="{{$dat->price}} руб" data-name="{{$dat->title}}">
                                         Заказать
                                     </a>
                                 </div>
@@ -189,7 +189,7 @@
                                     <span class="price">
                                         Цена: {{$dat->price}} руб.
                                     </span>
-                                    <a class="buy-cart popup-modal" href="#test-modal" data-price="17 175 руб" data-name="Диван Аккордеон 1,4м (без декоров)">
+                                    <a class="buy-cart popup-modal" href="#test-modal" data-price="{{$dat->price}} руб" data-name="{{$dat->title}}">
                                         Заказать
                                     </a>
                                 </div>
@@ -222,7 +222,7 @@
                                     <span class="price">
                                         Цена: {{$dat->price}} руб.
                                     </span>
-                                    <a class="buy-cart popup-modal" href="#test-modal" data-price="17 175 руб" data-name="Диван Аккордеон 1,4м (без декоров)">
+                                    <a class="buy-cart popup-modal" href="#test-modal" data-price="{{$dat->price}} руб" data-name="{{$dat->title}}">
                                         Заказать
                                     </a>
                                 </div>

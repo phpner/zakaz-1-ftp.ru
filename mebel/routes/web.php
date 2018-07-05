@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/admin/', 'IndexController@index');
+Route::get('/mebel', 'IndexController@index');
 
 Auth::routes();
 
