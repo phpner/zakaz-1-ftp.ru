@@ -31,6 +31,8 @@ RewriteRule ^login/?$ mebel/$1 [L]
 RewriteCond %{REQUEST_URI} ^mebel
 RewriteRule (.*) mebel/$1 [NC,L]
 
+RewriteRule ^logout/? mebel/$1 [NC,L]
+
 
 
 

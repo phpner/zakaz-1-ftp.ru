@@ -23,8 +23,8 @@
 <link rel="stylesheet" href="/css/bootstrap-spacelab.min.css">
 <link rel="stylesheet" href="/css/main.css">
 <link rel="alternate" title="<?php print htmlspecialchars($settings['site_name']) ?>" href="<?php print htmlspecialchars($Path->Rss()); ?>" type="application/rss+xml">
-<link rel="icon" href=​"http://vadshop.ru/favicon.png" type="image/png">
-<link rel="shortcut icon" href="http://vadshop.ru/favicon.png" type="image/png">
+<link rel="icon" href=​"/favicon.png" type="image/png">
+<link rel="shortcut icon" href="/favicon.png" type="image/png">
 <!-- <link rel="stylesheet" href="/css/bootstrap-theme.min.css"> -->
 <!--[if lt IE 9]>
 	<script src="/js/html5shiv.min.js"></script>

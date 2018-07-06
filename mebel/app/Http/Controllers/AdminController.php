@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Page;
+use App\About_us;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\View\View;
 
 class AdminController extends Controller
 {
@@ -51,14 +53,6 @@ class AdminController extends Controller
 	    $page->cate = $request->input('cate'); ;
 	    $page->file_url = $request->input('img-url'); ;
 
-/*
-	    $imageName =  $file.'.'.$request->file('file')->getClientOriginalExtension();
-
-	    Storage::disk('local')->put('file.txt', 'Contents');
-	    $request->file('file')->move(
-		    base_path() . '/public/images/catalog/', $imageName
-	    );*/
-
 	    if($page->save()) return redirect(route('admin'));
 
     }
@@ -89,6 +83,42 @@ class AdminController extends Controller
 	    $page->file_url = $request->input('img-url');;
 
 	    if($page->save()) return redirect(route('admin'));
+
+    }
+
+    public function about_us()
+    {
+	    $title = About_us::where('id_text', 1)->get();
+	    $item1 = About_us::where('id_text', 2)->get();
+	    $item2 = About_us::where('id_text', 3)->get();
+
+    	return View('admin.about_us',[
+    		'items' => $title,
+		    'items1' => $item1,
+		    'items2' => $item2]);
+    }
+    public function about_us_save(Request $request)
+    {
+	    About_us::where('id_text', 1)
+		    ->update(['title' => $request->input('title')]);
+	    About_us::where('id_text', 2)
+		    ->update(
+		    	[
+		    		'title' => $request->input('title1'),
+				    'text' => $request->input('text1'),
+				    'img_url' => $request->input('img-url1')
+			    ]
+		        );
+
+	    About_us::where('id_text',3)
+		    ->update(
+		    	[
+	            'title' => $request->input('title2'),
+			    'text' => $request->input('text2'),
+			    'img_url' => $request->input('img-url2')
+			    ]
+		        );
+	    return redirect(route('admin'));
 
     }
 }

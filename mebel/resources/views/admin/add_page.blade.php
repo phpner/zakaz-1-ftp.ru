@@ -29,32 +29,37 @@
                                         </div>
                                         <div class="block-img">
                                             <img style="display:<?php echo (old('img-url')) ? 'block' : 'none' ;?>" class="img-circle" id="avatar" src="{{ old('img-url') }}" /> <br><br>
-                                            <button type="button"  class="button-relax  open-med btn {{ $errors->has('img-url') ? 'btn-danger' : 'btn-primary' }} btn-lg" data-toggle="modal" data-target="#myModal">
+                                            <button type="button"  class="button-relax my-bnt  open-med btn {{ $errors->has('img-url') ? 'btn-danger' : 'btn-primary' }} btn-lg" data-toggle="modal" data-target="#myModal">
                                                 Картинка
                                             </button>
                                         </div>
                                         <br>
-                                        <div class="form-group">
-                                            <label for="price">Цена товара</label>
-                                            <div class="input-group">
-                                                <input type="text" name="price" value="{{ old('price') }}" class="form-control{{ $errors->has('price') ? ' is-invalid' : '' }}">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text" id="basic-addon1">руб.</span>
-                                                </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-4 offset-md-1">
+                                            <div class="input-group ">
+                                                    <label for="price">Цена товара</label>
+                                                    <input type="text" name="price" value="{{ old('price') }}" class="form-control{{ $errors->has('price') ? ' is-invalid' : '' }}">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon1">руб.</span>
+                                                    </div>
                                             </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="mr-sm-2" for="inlineFormCustomSelect">выберите категорию</label>
+                                                <select  name="cate" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+                                                    <option  value="divan">Диваны</option>
+                                                    <option value="ugl-divan">Угловые диваны</option>
+                                                    <option value="kreslo-krovat">Кресла-кровати</option>
+                                                    <option value="kreslo-relax">Кресла для отдыха</option>
+                                                </select>
+                                            </div>
+
                                         </div>
-                                        <br>
-                                        <label class="mr-sm-2" for="inlineFormCustomSelect">выберите категорию</label>
-                                        <select  name="cate" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
-                                            <option  value="divan">Диваны</option>
-                                            <option value="ugl-divan">Угловые диваны</option>
-                                            <option value="kreslo-krovat">Кресла-кровати</option>
-                                            <option value="kreslo-relax">Кресла для отдыха</option>
-                                        </select>
                                         <br><br>
                                         <input class="img-url" type="hidden" name="img-url" value="{{old('img-url')}}">
                                         {{ csrf_field() }}
-                                        <button type="submit" class="btn btn-primary">Сохранить</button>
+                                        <button  type="submit" class="btn btn-primary ">Сохранить</button>
                                     </form>
                                 </div>
                                 </div>

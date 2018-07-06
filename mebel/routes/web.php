@@ -28,3 +28,7 @@ Route::get('/mebel/edit/{id}', 'AdminController@edit_page_post')->name('edit_pag
 
 Route::post('/mebel/update/{id}', 'AdminController@update_page_post')->name('update_page_post');
 
+Route::get('/mebel/about_us/', 'AdminController@about_us')->name('about_us');
+
+Route::post('/mebel/about_us_save/', 'AdminController@about_us_save');
+

@@ -8,7 +8,7 @@
                     <div class="card-body">
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="divan" role="tabpanel" aria-labelledby="home-tab">
-                                <h4 style="padding: 10px" class="text-center  badge-warning">Редактирование {{{$items[0]->title}}}</h4>
+                                <h4 style="padding: 10px" class="text-center  badge-warning">Редактирование: {{{$items[0]->title}}}</h4>
                                 @if ($errors->any())
                                     <div class="alert alert-danger">
                                         <ul>
@@ -18,49 +18,45 @@
                                         </ul>
                                     </div>
                                 @endif
-                                <form method="post" action="/mebel/update/{{$items[0]->id}}" enctype="multipart/form-data">
+                                <form method="post" action="/mebel/about_us_save" enctype="multipart/form-data">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Название товара</label>
+                                        <label for="exampleInputEmail1">Название раздела</label>
                                         <input type="text" name="title" value="{{$items[0]->title}}" class="form-control{{ $errors->has('title') ? ' is-invalid' : '' }}">
                                     </div>
                                     <div class="form-group">
-                                        <label for="harak">Описание товара</label>
-                                        <textarea name='descr'   class="form-control{{ $errors->has('descr') ? ' is-invalid' : '' }}" rows="3" >{{$items[0]->descr}}</textarea>
+                                        <label for="exampleInputEmail1">Заголовок 1</label>
+                                        <input type="text" name="title1" value="{{$items1[0]->title}}" class="form-control{{ $errors->has('title1') ? ' is-invalid' : '' }}">
                                     </div>
-                                    <div class="block-img">
-                                        <img style="display:block" class="img-circle" id="avatar" src="{{$items[0]->file_url}}" /> <br><br>
-                                        <button type="button" class="my-bnt btn {{ $errors->has('img-url') ? 'btn-danger' : 'btn-primary' }} btn-lg" data-toggle="modal" data-target="#myModal">
-                                            Картинка
+                                    <div class="form-group">
+                                        <label for="harak">Текст под Заголовок 1</label>
+                                        <textarea name='text1'   class="form-control{{ $errors->has('text1') ? ' is-invalid' : '' }}" rows="3" >{{$items1[0]->text}}</textarea>
+                                    </div>
+                                    <div class="block-img" data-razdel="razdel-1">
+                                        <img style="display:block" class="img-circle razdel-1" src="{{$items1[0]->img_url}}" /> <br><br>
+                                        <button type="button" class="my-bnt btn {{ $errors->has('img-url1') ? 'btn-danger' : 'btn-primary' }} btn-lg" data-toggle="modal" data-target="#myModal">
+                                            Картинка для блок 1
                                         </button>
+                                        <input class="img-url razdel-1" type="hidden" name="img-url1" value="{{$items1[0]->img_url}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Заголовок 2</label>
+                                        <input type="text" name="title2" value="{{$items2[0]->title}}" class="form-control{{ $errors->has('title2') ? ' is-invalid' : '' }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="harak">Текст под Заголовок 2</label>
+                                        <textarea name='text2'   class="form-control{{ $errors->has('text2') ? ' is-invalid' : '' }}" rows="3" >{{$items2[0]->text}}</textarea>
+                                    </div>
+                                    <div class="block-img" data-razdel="razdel-2">
+                                        <img style="display:block" class="img-circle razdel-2" src="{{$items2[0]->img_url}}" /> <br><br>
+                                        <button type="button" class="my-bnt btn {{ $errors->has('img-url2') ? 'btn-danger' : 'btn-primary' }} btn-lg" data-toggle="modal" data-target="#myModal">
+                                            Картинка для блок 2
+                                        </button>
+                                        <input class="img-url razdel-2" type="hidden" name="img-url2" value="{{$items2[0]->img_url}}">
                                     </div>
                                     <br>
-                                    <div class="form-group row">
-                                        <div class="col-md-4 offset-md-1">
-                                            <label for="price">Цена товара</label>
-                                            <div class="input-group">
-                                                <input type="text" name="price" value="{{ $items[0]->price }}" class="form-control{{ $errors->has('price') ? ' is-invalid' : '' }}">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text" id="basic-addon1">руб.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="mr-sm-2" for="inlineFormCustomSelect">выберите категорию</label>
-                                            <select  name="cate" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
-                                                <option <?php echo $items[0]->cate == "divan" ? 'selected' : '';?>  value="divan">Диваны</option>
-                                                <option <?php echo $items[0]->cate == "ugl-divan" ? 'selected' : '';?>  value="ugl-divan">Угловые диваны</option>
-                                                <option <?php echo $items[0]->cate == "kreslo-krovat" ? 'selected' : '';?>  value="kreslo-krovat">Кресла-кровати</option>
-                                                <option <?php echo $items[0]->cate == "kreslo-relax" ? 'selected' : '';?>  value="kreslo-relax">Кресла для отдыха</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <input class="img-url my-bnt" type="hidden" name="img-url" value="{{$items[0]->file_url}}">
                                     {{ csrf_field() }}
                                     <button type="submit" class="btn btn-primary">Сохранить</button>
-                                    <a  href="/mebel/admin" class="btn btn-info">Отмена</a>
-                                    <a   href="/mebel/del/{{$items[0]->id}}" class="btn btn-danger del-item">Удалить</a>
+                                    <a href="/mebel/admin" class="btn btn-info">Отмена</a>
                                 </form>
                             </div>
                         </div>
@@ -76,6 +72,10 @@
 @section('sctipt')
     <script>
         jQuery(document).ready(function(){
+            // определяем раздел
+            $("button").on('click',function () {
+                window.metar = $(this).parent().attr('data-razdel');
+            });
             $(".del-item").on('click',function (e){
                 confirm("Удалить товар?") ? '' :  e.preventDefault();
             });
@@ -107,10 +107,12 @@
                 breadCrumbRootText: 'Картинки', // optional
                 actionConfirmationText: 'Удалить?',
                 onInsertCallback: function (src){
+                    var razdel = window.metar;
                     var str = src.src.replace("_thumb_", "");
-                    jQuery('#avatar').attr('src', str );
-                    $('.img-url').attr('value', str);
-                    $('.img-circle').css('display','block');
+
+                    jQuery("."+razdel).attr('src', str );
+                    $('.'+razdel+'.img-url').attr('value', str);
+                    $("."+razdel+'.img-circle').css('display','block');
                     jQuery('#myModal').modal('hide');
                 },
 

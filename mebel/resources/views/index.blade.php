@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="utf-8">
     <meta content="all" name="robots">
-    <title>Главная</title>
+    <title>Мебельный магазин «VadShop»</title>
     <meta content="Главная" name="description">
     <meta content="Главная" name="keywords">
     <meta content="width=device-width, initial-scale=1.0" name="viewport"><!-- LP requires -->
@@ -13,8 +13,9 @@
     <link href="/css/patch.css" rel="stylesheet" type="text/css">
     <link href="/css/magnific-popup.css" rel="stylesheet" type="text/css">
     <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="icon" href="/favicon.png" type="image/x-icon">
+
+    <link rel="shortcut icon" href="/favicon-2.png" type="image/png">
+    <link rel="icon" href=/favicon-2.png" type="image/png">
 </head>
 <body>
 <div class="overlay_in" onclick="$('.overlay').fadeOut(200);">
@@ -239,39 +240,31 @@
 
 <div class="m_text_wrapper" data-block-layout="54041" id="_lp_block_14396841">
     <div class="m_text_wrap">
-        <div class="text_block_title lp6_title_text">О компании</div>
+        <div class="text_block_title lp6_title_text">{{$items[0]->title}}</div>
 
         <div class="text_blocks">
             <div class="text_j right">
-                <div class="title lp6_subtitle_text">При производстве мебели по индивидуальным эскиза</div>
+                <div class="title lp6_subtitle_text">{{$items1[0]->title}}</div>
 
                 <div class="text_wrap clear-self">
-                    <a href="/img/rectangle_1.png" class="pic"><img alt="При производстве мебели по индивидуальным эскиза" src="/img/rectangle_1.png">
+                    <a href="{{$items1[0]->img_url}}" class="pic"><img alt="{{$items1[0]->title}}" src="{{$items1[0]->img_url}}">
                     </a>
 
                     <div class="text lp6_content_text">
-                        <p>- "Во главу угла" мы ставим индивидуальный подход. Каждый предмет мебели мы изготавливаем по оригинальному эскизу или, если же эскиза нет, наши специалисты всегда готовы обсудить с заказчиком все
-                            его пожелания и идеи, а затем воплотить это все в реальность.<br>
-                            - Оперативность - вся мебель изготавливается в кратчайшие сроки, а при необходимости возможна реализация сверхсрочных заказов.<br>
-                            - Возможность внесения корректировок в дизайн мебели на этапах до полного утверждения эскиза - еще один плюс сотрудничества с нами.</p>
+                        {!! $items1[0]->text !!}
                     </div>
                 </div>
             </div>
 
             <div class="text_j left">
-                <div class="title lp6_subtitle_text">Мы гарантируем, что заказанная у нас мебель</div>
+                <div class="title lp6_subtitle_text">{{$items2[0]->title}}</div>
 
                 <div class="text_wrap clear-self">
-                    <a href="/img/rectangle_2.png"" class="pic"><img alt="Мы гарантируем, что заказанная у нас мебель" src="/img/rectangle_2.png">
+                    <a href="{{$items2[0]->img_url}}" class="pic"><img alt="{{$items2[0]->title}}" src="{{$items2[0]->img_url}}">
                     </a>
 
                     <div class="text lp6_content_text">
-                        <p>Мы поможем реализовать Вам самые смелые задумки, при необходимости вместе спроектируем и составим эскиз, а также подберем материалы.</p>
-
-                        <p>Наша компания вот уже более 5 лет работает на рынке кухонной мебели. Мы работаем по индивидуальным эскизам, а также предоставляем своим клиентам типовую качественную, прочную и удобную мебель по
-                            выгодным ценам.<br>
-                            <br>
-                            Ждем Вас!</p>
+                        {!! $items2[0]->text !!}
                     </div>
                 </div>
             </div>

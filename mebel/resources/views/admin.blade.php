@@ -7,6 +7,9 @@
             <div class="card">
                 <div class="card-header">Все товары</div>
                 <div class="card-body">
+                    @if(isset($date))
+                    <h2 class="text-center">всего товаров {{count($date)}}</h2>
+                    @endif
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#divan" role="tab" aria-controls="divan" aria-selected="true">Диваны</a>
