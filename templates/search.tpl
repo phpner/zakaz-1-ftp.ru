@@ -69,7 +69,6 @@ else {
 			</div>
 		</div>
 	</div>
-<div class="clearfix"></div>
 <?php
 	}
 	if (sizeof($pages)) {

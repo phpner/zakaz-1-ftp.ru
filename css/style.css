@@ -1,5 +1,7 @@
 h1{
 	font-size: inherit;
+	position: initial;
+	z-index: 999;
 }
 .mapp{
 	position: absolute;
@@ -155,4 +157,13 @@ products-inner .hide{
         width: 320px!important;;
     }
 }
+
+@media all and(max-width: 768px){
+    .myprice_box{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+}
+
 

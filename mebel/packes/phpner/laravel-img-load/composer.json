@@ -1,0 +1,17 @@
+{
+    "name": "phpner/laravel-img-load",
+    "version" : "1.0.0",
+    "authors": [
+        {
+            "name": "phpner",
+            "email": "phpner@gmil.com"
+        }
+    ],
+    "minimum-stability" : "dev",
+    "require": {},
+    "autoload": {
+      "psr-4" : {
+        "Phpner\\LaravelImgLoad\\" : ""
+      }
+    }
+}

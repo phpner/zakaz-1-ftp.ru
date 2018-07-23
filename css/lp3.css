@@ -2034,8 +2034,8 @@ table.table2 th {
 
 @media screen and (max-width: 479px) {
 	.m_text_wrapper .text_blocks .text_wrap .pic {
-		float: none!important;
-		display: block !important;
+		float: none;
+		display: block;
 		text-align: center;
 		margin: 0 0 15px;
 	}

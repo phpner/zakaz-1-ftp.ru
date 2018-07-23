@@ -37,7 +37,7 @@ else {
 		}
 	}
 	print "</div></div></div>\n";
-
+	
 	foreach ($offers as $offer_info) {
 ?>
 	<div class="col-md-4 col-sm-6 col-xs-12 wr-good">
@@ -59,10 +59,9 @@ else {
 			</div>
 		</div>
 	</div>
-<div class="clearfix"></div>
 <?php
 	}
-
+	
 	if (sizeof($pages)) {
 		print "<div class=\"col-md-12\"><ul class=\"pagination\">\n";
 		foreach ($pages as $page_data) {
