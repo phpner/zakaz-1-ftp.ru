@@ -38,6 +38,8 @@ class AdminController extends Controller
     }
     public function add_page_post(Request $request){
 
+        dd($request);
+
 	$this->validate($request, [
 		    'title' => 'required|max:255',
 		    'img-url' => 'required',

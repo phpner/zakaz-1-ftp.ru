@@ -57,7 +57,8 @@
 
                                         </div>
                                         <br><br>
-                                        <input class="img-url" type="hidden" name="img-url" value="{{old('img-url')}}">
+                                        <input class="img-url" type="hidden" name="img-url[]" value="{{old('img-url')}}">
+                                        <input class="img-url" type="file" name="img-url[]" value="{{old('img-url')}}">
                                         {{ csrf_field() }}
                                         <button  type="submit" class="btn btn-primary ">Сохранить</button>
                                     </form>
