@@ -2,24 +2,15 @@
 
 use Illuminate\Database\Seeder;
 
-
-
 class DatabaseSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-         $this->call(\about_uses::class);
-         $this->call(\MebelSeeder::class);
-
-	    DB::table('users')->insert([
-		    'name' => "admin",
-		    'email' => 'admin@admin.ru',
-		    'password' => bcrypt('123456'),
-	    ]);
+        // $this->call(UsersTableSeeder::class);
     }
 }

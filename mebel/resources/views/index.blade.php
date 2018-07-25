@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="utf-8">
     <meta content="all" name="robots">
-    <title>Мебельный магазин «VadShop»</title>
+    <title>Оптово-розничный МЕБЕЛЬНЫЙ магазин-склад «VadShop»</title>
     <meta content="Главная" name="description">
     <meta content="Главная" name="keywords">
     <meta content="width=device-width, initial-scale=1.0" name="viewport"><!-- LP requires -->
@@ -50,8 +50,8 @@
             <div class="left-part">
                 <div class="site-name-wrapper">
                     <div class="site-name">VadShop</div>
-
-                    <div class="site-activity">Мебельный магазин</div>
+                    <div class="site-activity">Оптово-розничный</div>
+                    <div class="site-activity">МЕБЕЛЬНЫЙ магазин-склад</div>
                 </div>
             </div>
 
@@ -240,41 +240,34 @@
 
 <div class="m_text_wrapper" data-block-layout="54041" id="_lp_block_14396841">
     <div class="m_text_wrap">
-       
         <div class="text_block_title lp6_title_text">{{$items[0]->title}}</div>
-        @if(!$items1->isEmpty())
-             @foreach($items1 as $items)
-                <div class="text_blocks">
-                    <div class="text_j right">
-                        <div class="title lp6_subtitle_text"><?php echo $items->title ? $items->title : '' ?></div>
 
-                        <div class="text_wrap clear-self">
-                            <a href="{{$items->img_url}}" class="pic"><img alt="{{$items->title}}" src="{{$items->img_url}}">
-                            </a>
+        <div class="text_blocks">
+            <div class="text_j right">
+                <div class="title lp6_subtitle_text">{{$items1[0]->title}}</div>
 
-                            <div class="text lp6_content_text">
-                                <?php echo $items->text ? $items->text : '' ?>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach;
-            @endif
-            @if(!$items2->isEmpty())
-                 @foreach($items2 as $items)
-                <div class="text_j left">
-                    <div class="title lp6_subtitle_text"><?php echo $items->title ? $items->title : '' ?></div>
+                <div class="text_wrap clear-self">
+                    <a href="{{$items1[0]->img_url}}" class="pic"><img alt="{{$items1[0]->title}}" src="{{$items1[0]->img_url}}">
+                    </a>
 
-                    <div class="text_wrap clear-self">
-                        <a href="{{$items->img_url}}" class="pic"><img alt="{{$items->title}}" src="{{$items->img_url}}">
-                        </a>
-
-                        <div class="text lp6_content_text">
-                            <?php echo $items->text ? $items->text : '' ?>
-                        </div>
+                    <div class="text lp6_content_text">
+                        {!! $items1[0]->text !!}
                     </div>
                 </div>
-                   @endforeach;
-            @endif
+            </div>
+
+            <div class="text_j left">
+                <div class="title lp6_subtitle_text">{{$items2[0]->title}}</div>
+
+                <div class="text_wrap clear-self">
+                    <a href="{{$items2[0]->img_url}}" class="pic"><img alt="{{$items2[0]->title}}" src="{{$items2[0]->img_url}}">
+                    </a>
+
+                    <div class="text lp6_content_text">
+                        {!! $items2[0]->text !!}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -310,7 +303,8 @@
                         без выходных и праздников</div>
 
                     <div class="social-block"><a href="https://twitter.com/vadshopru" target="_blank"><img alt="Twitter" src="/img/fgs16_twitter_4.svg"></a> <a href="https://www.facebook.com/groups/vadshop.ru/" target=
-                        "_blank"><img alt="Facebook" src="/img/fgs16_facebook_4.svg"></a> <a href="https://vk.com/vadshopru" target="_blank"><img alt="ВКонтакте" src="/img/fgs16_vkontakte_2_4.svg"></a> <a href="https://ok.ru/group/vadshopru" target="_blank"><img alt="Одноклассники" src="/img/fgs16_odnoklassniki_4.svg"></a></div>
+                        "_blank"><img alt="Facebook" src="/img/fgs16_facebook_4.svg"></a> <a href="https://vk.com/vadshopru" target="_blank"><img alt="ВКонтакте" src="/img/fgs16_vkontakte_2_4.svg"></a> <a href=
+                                                                                                                                                                                                             "https://ok.ru/group/vadshopru" target="_blank"><img alt="Одноклассники" src="/img/fgs16_odnoklassniki_4.svg"></a></div>
                 </div>
             </div>
         </div>
